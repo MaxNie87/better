@@ -1,0 +1,94 @@
+.map-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.map {
+  width: 100%;
+  height: 100vh;
+}
+
+.map-toolbar {
+  position: absolute;
+  right: 24rpx;
+  top: 32rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 16rpx;
+}
+
+.toolbar-btn {
+  background-color: #ffffff;
+  border-radius: 999rpx;
+  padding: 18rpx 28rpx;
+  box-shadow: 0 4rpx 16rpx rgba(31, 45, 36, 0.12);
+  font-size: 26rpx;
+  color: #2f6f4e;
+  text-align: center;
+}
+
+.site-card {
+  position: absolute;
+  left: 24rpx;
+  right: 24rpx;
+  bottom: 32rpx;
+  border-radius: 20rpx;
+  background-color: #ffffff;
+  padding: 24rpx;
+  box-shadow: 0 8rpx 24rpx rgba(31, 45, 36, 0.18);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header .title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1f2d24;
+}
+
+.card-header .close {
+  font-size: 40rpx;
+  color: #8d9a92;
+  padding: 0 12rpx;
+}
+
+.tag-row {
+  margin-top: 16rpx;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rpx;
+}
+
+.seasons {
+  margin-top: 12rpx;
+  font-size: 26rpx;
+  color: #5b6b62;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.season {
+  margin-right: 8rpx;
+  background-color: #e9f3ec;
+  color: #2f6f4e;
+  padding: 2rpx 12rpx;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+}
+
+.card-actions {
+  margin-top: 20rpx;
+  display: flex;
+  gap: 16rpx;
+}
+
+.card-actions .btn-primary,
+.card-actions .btn-secondary {
+  flex: 1;
+}

@@ -1,0 +1,49 @@
+.section-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #1f2d24;
+  margin-bottom: 12rpx;
+}
+
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24rpx;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  font-size: 26rpx;
+  color: #1f2d24;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 200rpx;
+  background-color: #f7f9f8;
+  border-radius: 12rpx;
+  padding: 16rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  color: #1f2d24;
+}
+
+.char-count {
+  margin-top: 8rpx;
+  text-align: right;
+  font-size: 22rpx;
+  color: #8d9a92;
+}
+
+.action-bar {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 16rpx;
+}
+
+.action-bar .btn-primary,
+.action-bar .btn-secondary {
+  flex: 1;
+}

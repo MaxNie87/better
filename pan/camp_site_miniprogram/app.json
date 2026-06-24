@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/map/index",
+    "pages/sites/index",
+    "pages/site-detail/index",
+    "pages/feedback/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2f6f4e",
+    "navigationBarTitleText": "营地图",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#f4f6f5"
+  },
+  "tabBar": {
+    "color": "#7a7a7a",
+    "selectedColor": "#2f6f4e",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/map/index",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/sites/index",
+        "text": "营地"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于在地图上显示附近的露营地点"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "lazyCodeLoading": "requiredComponents",
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,82 @@
+page {
+  background-color: #f4f6f5;
+  color: #1f2d24;
+  font-size: 28rpx;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+  padding: 24rpx;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  margin-bottom: 24rpx;
+  box-shadow: 0 4rpx 16rpx rgba(31, 45, 36, 0.06);
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #1f2d24;
+}
+
+.subtitle {
+  font-size: 26rpx;
+  color: #5b6b62;
+  margin-top: 8rpx;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 22rpx;
+  padding: 4rpx 14rpx;
+  border-radius: 999rpx;
+  margin-right: 12rpx;
+  background-color: #e9f3ec;
+  color: #2f6f4e;
+}
+
+.tag.warn {
+  background-color: #fff3e0;
+  color: #b25b00;
+}
+
+.tag.muted {
+  background-color: #eceeed;
+  color: #6e7873;
+}
+
+.btn-primary {
+  background-color: #2f6f4e;
+  color: #ffffff;
+  border-radius: 999rpx;
+  padding: 18rpx 32rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #2f6f4e;
+  border: 2rpx solid #2f6f4e;
+  border-radius: 999rpx;
+  padding: 16rpx 32rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.divider {
+  height: 1rpx;
+  background-color: #ebeeec;
+  margin: 16rpx 0;
+}
+
+.empty {
+  text-align: center;
+  color: #8d9a92;
+  padding: 80rpx 0;
+}

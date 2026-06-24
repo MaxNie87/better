@@ -1,0 +1,71 @@
+<view class="container" wx:if="{{site}}">
+  <view class="card">
+    <view class="row-between">
+      <view class="title">{{site.name}}</view>
+      <view class="favorite {{site.isFavorite ? 'on' : ''}}" bindtap="onToggleFavorite">
+        {{site.isFavorite ? '★' : '☆'}}
+      </view>
+    </view>
+    <view class="subtitle">{{site.address}}</view>
+    <view class="coord">坐标：{{site.latitude}}, {{site.longitude}}</view>
+
+    <view class="tag-row">
+      <view class="tag" wx:if="{{site.hasToilet === true}}">有卫生间</view>
+      <view class="tag warn" wx:if="{{site.hasToilet === false}}">无卫生间</view>
+      <view class="tag muted" wx:if="{{site.hasToilet === null}}">卫生间未知</view>
+
+      <view class="tag" wx:if="{{site.isActive === true}}">活跃</view>
+      <view class="tag warn" wx:if="{{site.isActive === false}}">已停用</view>
+      <view class="tag muted" wx:if="{{site.isActive === null}}">状态未知</view>
+
+      <view class="tag" wx:if="{{site.hasUserFeedback}}">含用户反馈</view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">基础信息</view>
+    <view class="kv">
+      <text class="k">简介</text>
+      <text class="v">{{site.description || '暂无'}}</text>
+    </view>
+    <view class="kv">
+      <text class="k">备注</text>
+      <text class="v">{{site.note || '暂无'}}</text>
+    </view>
+    <view class="kv">
+      <text class="k">适合季节</text>
+      <text class="v">{{site.seasonLabels.length ? site.seasonLabels.join('、') : '未知'}}</text>
+    </view>
+    <view class="kv" wx:if="{{site.tags.length}}">
+      <text class="k">标签</text>
+      <view class="v tag-row inline">
+        <view class="tag" wx:for="{{site.tags}}" wx:key="*this">{{item}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">数据来源</view>
+    <view class="kv">
+      <text class="k">来源</text>
+      <text class="v">{{site.sourceLabel}}</text>
+    </view>
+    <view class="kv" wx:if="{{site.externalPoiId}}">
+      <text class="k">外部 POI ID</text>
+      <text class="v">{{site.externalPoiId}}</text>
+    </view>
+    <view class="kv">
+      <text class="k">最后更新</text>
+      <text class="v">{{updatedAtText}}</text>
+    </view>
+  </view>
+
+  <view class="action-bar">
+    <view class="btn-secondary" bindtap="onLocateOnMap">在地图查看</view>
+    <view class="btn-primary" bindtap="onGoFeedback">补充/纠错</view>
+  </view>
+</view>
+
+<view class="empty" wx:else>
+  <text>未找到该营地</text>
+</view>

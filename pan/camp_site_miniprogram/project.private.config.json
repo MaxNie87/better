@@ -1,0 +1,8 @@
+{
+  "description": "项目私有配置文件，本地有效，不上传至代码仓库",
+  "projectname": "camp_site_miniprogram",
+  "setting": {
+    "compileHotReLoad": true,
+    "urlCheck": false
+  }
+}

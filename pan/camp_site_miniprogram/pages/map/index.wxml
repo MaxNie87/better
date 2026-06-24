@@ -1,0 +1,58 @@
+<view class="map-page">
+  <map
+    id="campMap"
+    class="map"
+    longitude="{{center.longitude}}"
+    latitude="{{center.latitude}}"
+    scale="{{scale}}"
+    markers="{{markers}}"
+    show-location="{{true}}"
+    enable-traffic="{{false}}"
+    enable-3D="{{false}}"
+    bindmarkertap="onMarkerTap"
+    bindregionchange="onRegionChange"
+  ></map>
+
+  <view class="map-toolbar">
+    <view class="toolbar-btn" bindtap="onLocate">
+      <text>定位</text>
+    </view>
+    <view class="toolbar-btn" bindtap="onGoList">
+      <text>列表</text>
+    </view>
+  </view>
+
+  <view class="card site-card" wx:if="{{activeSite}}">
+    <view class="card-header">
+      <view class="title">{{activeSite.name}}</view>
+      <view class="close" bindtap="onCloseCard">×</view>
+    </view>
+    <view class="subtitle">{{activeSite.address}}</view>
+
+    <view class="tag-row">
+      <view class="tag" wx:if="{{activeSite.hasToilet === true}}">有卫生间</view>
+      <view class="tag warn" wx:if="{{activeSite.hasToilet === false}}">无卫生间</view>
+      <view class="tag muted" wx:if="{{activeSite.hasToilet === null}}">卫生间未知</view>
+
+      <view class="tag" wx:if="{{activeSite.isActive === true}}">活跃</view>
+      <view class="tag warn" wx:if="{{activeSite.isActive === false}}">已停用</view>
+      <view class="tag muted" wx:if="{{activeSite.isActive === null}}">状态未知</view>
+
+      <view class="tag" wx:if="{{activeSite.isFavorite}}">已收藏</view>
+    </view>
+
+    <view class="seasons" wx:if="{{activeSite.seasonLabels.length}}">
+      <text>适合季节：</text>
+      <text wx:for="{{activeSite.seasonLabels}}" wx:key="*this" class="season">{{item}}</text>
+    </view>
+
+    <view class="card-actions">
+      <view class="btn-secondary" bindtap="onToggleFavorite">
+        <text>{{activeSite.isFavorite ? '取消收藏' : '收藏'}}</text>
+      </view>
+      <view class="btn-primary" bindtap="onGoDetail">
+        <text>查看详情</text>
+      </view>
+    </view>
+  </view>
+</view>

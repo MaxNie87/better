@@ -1,0 +1,63 @@
+<view class="container" wx:if="{{site}}">
+  <view class="card">
+    <view class="title">{{site.name}}</view>
+    <view class="subtitle">{{site.address}}</view>
+  </view>
+
+  <view class="card">
+    <view class="section-title">是否有卫生间</view>
+    <radio-group class="radio-group" bindchange="onChangeToilet">
+      <label class="radio-item">
+        <radio value="true" checked="{{form.hasToilet === 'true'}}" color="#2f6f4e"/>
+        <text>有</text>
+      </label>
+      <label class="radio-item">
+        <radio value="false" checked="{{form.hasToilet === 'false'}}" color="#2f6f4e"/>
+        <text>无</text>
+      </label>
+      <label class="radio-item">
+        <radio value="unknown" checked="{{form.hasToilet === 'unknown'}}" color="#2f6f4e"/>
+        <text>不确定</text>
+      </label>
+    </radio-group>
+  </view>
+
+  <view class="card">
+    <view class="section-title">营地是否仍在使用</view>
+    <radio-group class="radio-group" bindchange="onChangeActive">
+      <label class="radio-item">
+        <radio value="true" checked="{{form.isActive === 'true'}}" color="#2f6f4e"/>
+        <text>仍在使用</text>
+      </label>
+      <label class="radio-item">
+        <radio value="false" checked="{{form.isActive === 'false'}}" color="#2f6f4e"/>
+        <text>已停用</text>
+      </label>
+      <label class="radio-item">
+        <radio value="unknown" checked="{{form.isActive === 'unknown'}}" color="#2f6f4e"/>
+        <text>不确定</text>
+      </label>
+    </radio-group>
+  </view>
+
+  <view class="card">
+    <view class="section-title">备注</view>
+    <textarea
+      class="textarea"
+      value="{{form.note}}"
+      placeholder="补充其他信息，例如最近一次到访时间、补给情况、注意事项"
+      bindinput="onChangeNote"
+      maxlength="200"
+    ></textarea>
+    <view class="char-count">{{form.note.length}}/200</view>
+  </view>
+
+  <view class="action-bar">
+    <view class="btn-secondary" bindtap="onCancel">取消</view>
+    <view class="btn-primary" bindtap="onSubmit">提交</view>
+  </view>
+</view>
+
+<view class="empty" wx:else>
+  <text>未找到该营地</text>
+</view>

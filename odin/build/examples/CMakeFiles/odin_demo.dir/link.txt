@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/odin_demo.dir/main.cpp.o  -o odin_demo  ../src/libodin.a 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libodin.a  CMakeFiles/odin.dir/core/dump.cpp.o
+/usr/bin/ranlib libodin.a

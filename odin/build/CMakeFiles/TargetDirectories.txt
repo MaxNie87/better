@@ -1,0 +1,8 @@
+/code3/better/odin/build/CMakeFiles/rebuild_cache.dir
+/code3/better/odin/build/CMakeFiles/edit_cache.dir
+/code3/better/odin/build/src/CMakeFiles/rebuild_cache.dir
+/code3/better/odin/build/src/CMakeFiles/edit_cache.dir
+/code3/better/odin/build/src/CMakeFiles/odin.dir
+/code3/better/odin/build/examples/CMakeFiles/rebuild_cache.dir
+/code3/better/odin/build/examples/CMakeFiles/edit_cache.dir
+/code3/better/odin/build/examples/CMakeFiles/odin_demo.dir

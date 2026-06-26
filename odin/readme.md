@@ -1,3 +1,51 @@
+# Odin
+
+Odin is a small C++17 utility library that follows the early-stage plan in `better_e.md`:
+
+- a clean CMake-based project layout
+- RAII wrappers for file handles and POSIX sockets
+- a lightweight thread pool
+- a simple config helper
+- a spdlog-backed logging facade
+- Catch2-based unit tests
+
+## Layout
+
+```text
+odin/
+├── CMakeLists.txt
+├── cmake/
+│   └── dependencies.cmake
+├── include/odin/
+├── src/core/
+├── tests/
+├── examples/
+├── .clang-format
+└── .github/workflows/ci.yml
+```
+
+## Build
+
+```bash
+cmake -B build -S .
+cmake --build build
+(cd build && ctest --output-on-failure)
+```
+
+## Demo
+
+```bash
+./build/examples/odin_demo
+```
+
+## What is already implemented
+
+- `odin::version()`
+- `odin::ThreadPool`
+- `odin::FileHandle`
+- `odin::Socket`
+- `odin::Config`
+- `odin::init_logger()` and log helpers
 # CMake 常用指令查询表
 
 | 指令 | 作用 | 常见写法 | 你可以把它理解成 |
@@ -83,3 +131,35 @@
 ```bash
 cmake -B build -S .
 cmake --build build
+
+
+
+
+
+# `unique_ptr` / `shared_ptr` / `weak_ptr` 对比图
+
+| 项目 | `unique_ptr` | `shared_ptr` | `weak_ptr` |
+|---|---|---|---|
+| 所有权 | 独占 | 共享 | 不拥有 |
+| 能否复制 | 不能 | 可以 | 可以 |
+| 能否移动 | 可以 | 可以 | 可以 |
+| 引用计数 | 没有 | 有 | 不增加引用计数 |
+| 自动释放 | 可以 | 可以 | 不负责释放 |
+| 是否需要 `lock()` | 不需要 | 不需要 | 需要 |
+| 适合场景 | 单一所有者资源 | 多处共享对象 | 观察对象、打破循环引用 |
+| 开销 | 最低 | 较高 | 较低 |
+
+## 生命周期示意
+
+```text
+unique_ptr:
+对象 <--- 只有一个拥有者
+结束时自动释放
+
+shared_ptr:
+对象 <--- owner1, owner2, owner3 ...
+最后一个 owner 消失时释放
+
+weak_ptr:
+对象 <--- shared_ptr 持有
+weak_ptr 只是观察，不算拥有者

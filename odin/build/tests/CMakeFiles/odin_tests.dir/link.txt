@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/odin_tests.dir/test_main.cpp.o  -o odin_tests  ../src/libodin.a ../_deps/catch2-build/src/libCatch2Main.a ../_deps/spdlog-build/libspdlog.a -lpthread ../_deps/catch2-build/src/libCatch2.a 

@@ -78,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /code3/better/odin/build && $(CMAKE_COMMAND) -E cmake_progress_start /code3/better/odin/build/CMakeFiles /code3/better/odin/build/src/CMakeFiles/progress.marks
@@ -125,32 +136,167 @@ odin/fast:
 	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/build
 .PHONY : odin/fast
 
-core/dump.o: core/dump.cpp.o
+core/config.o: core/config.cpp.o
 
-.PHONY : core/dump.o
+.PHONY : core/config.o
 
 # target to build an object file
-core/dump.cpp.o:
-	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/dump.cpp.o
-.PHONY : core/dump.cpp.o
+core/config.cpp.o:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/config.cpp.o
+.PHONY : core/config.cpp.o
 
-core/dump.i: core/dump.cpp.i
+core/config.i: core/config.cpp.i
 
-.PHONY : core/dump.i
+.PHONY : core/config.i
 
 # target to preprocess a source file
-core/dump.cpp.i:
-	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/dump.cpp.i
-.PHONY : core/dump.cpp.i
+core/config.cpp.i:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/config.cpp.i
+.PHONY : core/config.cpp.i
 
-core/dump.s: core/dump.cpp.s
+core/config.s: core/config.cpp.s
 
-.PHONY : core/dump.s
+.PHONY : core/config.s
 
 # target to generate assembly for a file
-core/dump.cpp.s:
-	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/dump.cpp.s
-.PHONY : core/dump.cpp.s
+core/config.cpp.s:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/config.cpp.s
+.PHONY : core/config.cpp.s
+
+core/file_handle.o: core/file_handle.cpp.o
+
+.PHONY : core/file_handle.o
+
+# target to build an object file
+core/file_handle.cpp.o:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/file_handle.cpp.o
+.PHONY : core/file_handle.cpp.o
+
+core/file_handle.i: core/file_handle.cpp.i
+
+.PHONY : core/file_handle.i
+
+# target to preprocess a source file
+core/file_handle.cpp.i:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/file_handle.cpp.i
+.PHONY : core/file_handle.cpp.i
+
+core/file_handle.s: core/file_handle.cpp.s
+
+.PHONY : core/file_handle.s
+
+# target to generate assembly for a file
+core/file_handle.cpp.s:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/file_handle.cpp.s
+.PHONY : core/file_handle.cpp.s
+
+core/logger.o: core/logger.cpp.o
+
+.PHONY : core/logger.o
+
+# target to build an object file
+core/logger.cpp.o:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/logger.cpp.o
+.PHONY : core/logger.cpp.o
+
+core/logger.i: core/logger.cpp.i
+
+.PHONY : core/logger.i
+
+# target to preprocess a source file
+core/logger.cpp.i:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/logger.cpp.i
+.PHONY : core/logger.cpp.i
+
+core/logger.s: core/logger.cpp.s
+
+.PHONY : core/logger.s
+
+# target to generate assembly for a file
+core/logger.cpp.s:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/logger.cpp.s
+.PHONY : core/logger.cpp.s
+
+core/socket.o: core/socket.cpp.o
+
+.PHONY : core/socket.o
+
+# target to build an object file
+core/socket.cpp.o:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/socket.cpp.o
+.PHONY : core/socket.cpp.o
+
+core/socket.i: core/socket.cpp.i
+
+.PHONY : core/socket.i
+
+# target to preprocess a source file
+core/socket.cpp.i:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/socket.cpp.i
+.PHONY : core/socket.cpp.i
+
+core/socket.s: core/socket.cpp.s
+
+.PHONY : core/socket.s
+
+# target to generate assembly for a file
+core/socket.cpp.s:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/socket.cpp.s
+.PHONY : core/socket.cpp.s
+
+core/thread_pool.o: core/thread_pool.cpp.o
+
+.PHONY : core/thread_pool.o
+
+# target to build an object file
+core/thread_pool.cpp.o:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/thread_pool.cpp.o
+.PHONY : core/thread_pool.cpp.o
+
+core/thread_pool.i: core/thread_pool.cpp.i
+
+.PHONY : core/thread_pool.i
+
+# target to preprocess a source file
+core/thread_pool.cpp.i:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/thread_pool.cpp.i
+.PHONY : core/thread_pool.cpp.i
+
+core/thread_pool.s: core/thread_pool.cpp.s
+
+.PHONY : core/thread_pool.s
+
+# target to generate assembly for a file
+core/thread_pool.cpp.s:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/thread_pool.cpp.s
+.PHONY : core/thread_pool.cpp.s
+
+core/version.o: core/version.cpp.o
+
+.PHONY : core/version.o
+
+# target to build an object file
+core/version.cpp.o:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/version.cpp.o
+.PHONY : core/version.cpp.o
+
+core/version.i: core/version.cpp.i
+
+.PHONY : core/version.i
+
+# target to preprocess a source file
+core/version.cpp.i:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/version.cpp.i
+.PHONY : core/version.cpp.i
+
+core/version.s: core/version.cpp.s
+
+.PHONY : core/version.s
+
+# target to generate assembly for a file
+core/version.cpp.s:
+	cd /code3/better/odin/build && $(MAKE) -f src/CMakeFiles/odin.dir/build.make src/CMakeFiles/odin.dir/core/version.cpp.s
+.PHONY : core/version.cpp.s
 
 # Help Target
 help:
@@ -160,10 +306,26 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
 	@echo "... odin"
-	@echo "... core/dump.o"
-	@echo "... core/dump.i"
-	@echo "... core/dump.s"
+	@echo "... core/config.o"
+	@echo "... core/config.i"
+	@echo "... core/config.s"
+	@echo "... core/file_handle.o"
+	@echo "... core/file_handle.i"
+	@echo "... core/file_handle.s"
+	@echo "... core/logger.o"
+	@echo "... core/logger.i"
+	@echo "... core/logger.s"
+	@echo "... core/socket.o"
+	@echo "... core/socket.i"
+	@echo "... core/socket.s"
+	@echo "... core/thread_pool.o"
+	@echo "... core/thread_pool.i"
+	@echo "... core/thread_pool.s"
+	@echo "... core/version.o"
+	@echo "... core/version.i"
+	@echo "... core/version.s"
 .PHONY : help
 
 

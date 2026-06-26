@@ -57,30 +57,105 @@ include src/CMakeFiles/odin.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/odin.dir/flags.make
 
-src/CMakeFiles/odin.dir/core/dump.cpp.o: src/CMakeFiles/odin.dir/flags.make
-src/CMakeFiles/odin.dir/core/dump.cpp.o: ../src/core/dump.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/odin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/odin.dir/core/dump.cpp.o"
-	cd /code3/better/odin/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/odin.dir/core/dump.cpp.o -c /code3/better/odin/src/core/dump.cpp
+src/CMakeFiles/odin.dir/core/config.cpp.o: src/CMakeFiles/odin.dir/flags.make
+src/CMakeFiles/odin.dir/core/config.cpp.o: ../src/core/config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/odin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/odin.dir/core/config.cpp.o"
+	cd /code3/better/odin/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/odin.dir/core/config.cpp.o -c /code3/better/odin/src/core/config.cpp
 
-src/CMakeFiles/odin.dir/core/dump.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odin.dir/core/dump.cpp.i"
-	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/odin/src/core/dump.cpp > CMakeFiles/odin.dir/core/dump.cpp.i
+src/CMakeFiles/odin.dir/core/config.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odin.dir/core/config.cpp.i"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/odin/src/core/config.cpp > CMakeFiles/odin.dir/core/config.cpp.i
 
-src/CMakeFiles/odin.dir/core/dump.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odin.dir/core/dump.cpp.s"
-	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/odin/src/core/dump.cpp -o CMakeFiles/odin.dir/core/dump.cpp.s
+src/CMakeFiles/odin.dir/core/config.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odin.dir/core/config.cpp.s"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/odin/src/core/config.cpp -o CMakeFiles/odin.dir/core/config.cpp.s
+
+src/CMakeFiles/odin.dir/core/file_handle.cpp.o: src/CMakeFiles/odin.dir/flags.make
+src/CMakeFiles/odin.dir/core/file_handle.cpp.o: ../src/core/file_handle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/odin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/odin.dir/core/file_handle.cpp.o"
+	cd /code3/better/odin/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/odin.dir/core/file_handle.cpp.o -c /code3/better/odin/src/core/file_handle.cpp
+
+src/CMakeFiles/odin.dir/core/file_handle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odin.dir/core/file_handle.cpp.i"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/odin/src/core/file_handle.cpp > CMakeFiles/odin.dir/core/file_handle.cpp.i
+
+src/CMakeFiles/odin.dir/core/file_handle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odin.dir/core/file_handle.cpp.s"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/odin/src/core/file_handle.cpp -o CMakeFiles/odin.dir/core/file_handle.cpp.s
+
+src/CMakeFiles/odin.dir/core/logger.cpp.o: src/CMakeFiles/odin.dir/flags.make
+src/CMakeFiles/odin.dir/core/logger.cpp.o: ../src/core/logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/odin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/odin.dir/core/logger.cpp.o"
+	cd /code3/better/odin/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/odin.dir/core/logger.cpp.o -c /code3/better/odin/src/core/logger.cpp
+
+src/CMakeFiles/odin.dir/core/logger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odin.dir/core/logger.cpp.i"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/odin/src/core/logger.cpp > CMakeFiles/odin.dir/core/logger.cpp.i
+
+src/CMakeFiles/odin.dir/core/logger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odin.dir/core/logger.cpp.s"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/odin/src/core/logger.cpp -o CMakeFiles/odin.dir/core/logger.cpp.s
+
+src/CMakeFiles/odin.dir/core/socket.cpp.o: src/CMakeFiles/odin.dir/flags.make
+src/CMakeFiles/odin.dir/core/socket.cpp.o: ../src/core/socket.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/odin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/odin.dir/core/socket.cpp.o"
+	cd /code3/better/odin/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/odin.dir/core/socket.cpp.o -c /code3/better/odin/src/core/socket.cpp
+
+src/CMakeFiles/odin.dir/core/socket.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odin.dir/core/socket.cpp.i"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/odin/src/core/socket.cpp > CMakeFiles/odin.dir/core/socket.cpp.i
+
+src/CMakeFiles/odin.dir/core/socket.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odin.dir/core/socket.cpp.s"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/odin/src/core/socket.cpp -o CMakeFiles/odin.dir/core/socket.cpp.s
+
+src/CMakeFiles/odin.dir/core/thread_pool.cpp.o: src/CMakeFiles/odin.dir/flags.make
+src/CMakeFiles/odin.dir/core/thread_pool.cpp.o: ../src/core/thread_pool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/odin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/odin.dir/core/thread_pool.cpp.o"
+	cd /code3/better/odin/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/odin.dir/core/thread_pool.cpp.o -c /code3/better/odin/src/core/thread_pool.cpp
+
+src/CMakeFiles/odin.dir/core/thread_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odin.dir/core/thread_pool.cpp.i"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/odin/src/core/thread_pool.cpp > CMakeFiles/odin.dir/core/thread_pool.cpp.i
+
+src/CMakeFiles/odin.dir/core/thread_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odin.dir/core/thread_pool.cpp.s"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/odin/src/core/thread_pool.cpp -o CMakeFiles/odin.dir/core/thread_pool.cpp.s
+
+src/CMakeFiles/odin.dir/core/version.cpp.o: src/CMakeFiles/odin.dir/flags.make
+src/CMakeFiles/odin.dir/core/version.cpp.o: ../src/core/version.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/odin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/odin.dir/core/version.cpp.o"
+	cd /code3/better/odin/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/odin.dir/core/version.cpp.o -c /code3/better/odin/src/core/version.cpp
+
+src/CMakeFiles/odin.dir/core/version.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/odin.dir/core/version.cpp.i"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/odin/src/core/version.cpp > CMakeFiles/odin.dir/core/version.cpp.i
+
+src/CMakeFiles/odin.dir/core/version.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/odin.dir/core/version.cpp.s"
+	cd /code3/better/odin/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/odin/src/core/version.cpp -o CMakeFiles/odin.dir/core/version.cpp.s
 
 # Object files for target odin
 odin_OBJECTS = \
-"CMakeFiles/odin.dir/core/dump.cpp.o"
+"CMakeFiles/odin.dir/core/config.cpp.o" \
+"CMakeFiles/odin.dir/core/file_handle.cpp.o" \
+"CMakeFiles/odin.dir/core/logger.cpp.o" \
+"CMakeFiles/odin.dir/core/socket.cpp.o" \
+"CMakeFiles/odin.dir/core/thread_pool.cpp.o" \
+"CMakeFiles/odin.dir/core/version.cpp.o"
 
 # External object files for target odin
 odin_EXTERNAL_OBJECTS =
 
-src/libodin.a: src/CMakeFiles/odin.dir/core/dump.cpp.o
+src/libodin.a: src/CMakeFiles/odin.dir/core/config.cpp.o
+src/libodin.a: src/CMakeFiles/odin.dir/core/file_handle.cpp.o
+src/libodin.a: src/CMakeFiles/odin.dir/core/logger.cpp.o
+src/libodin.a: src/CMakeFiles/odin.dir/core/socket.cpp.o
+src/libodin.a: src/CMakeFiles/odin.dir/core/thread_pool.cpp.o
+src/libodin.a: src/CMakeFiles/odin.dir/core/version.cpp.o
 src/libodin.a: src/CMakeFiles/odin.dir/build.make
 src/libodin.a: src/CMakeFiles/odin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code3/better/odin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libodin.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code3/better/odin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libodin.a"
 	cd /code3/better/odin/build/src && $(CMAKE_COMMAND) -P CMakeFiles/odin.dir/cmake_clean_target.cmake
 	cd /code3/better/odin/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/odin.dir/link.txt --verbose=$(VERBOSE)
 

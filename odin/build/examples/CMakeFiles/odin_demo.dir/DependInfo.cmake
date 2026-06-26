@@ -8,14 +8,21 @@ set(CMAKE_DEPENDS_CHECK_CXX
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "SPDLOG_COMPILED_LIB"
+  )
+
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
+  "_deps/spdlog-src/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/code3/better/odin/build/src/CMakeFiles/odin.dir/DependInfo.cmake"
+  "/code3/better/odin/build/_deps/spdlog-build/CMakeFiles/spdlog.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

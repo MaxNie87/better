@@ -234,3 +234,46 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /code3/better/odin/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_061ae/fast && /usr/bin/make -f CMakeFiles/cmTC_061ae.dir/build.make CMakeFiles/cmTC_061ae.dir/build
+make[1]: Entering directory '/code3/better/odin/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_061ae.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -std=c++17 -o CMakeFiles/cmTC_061ae.dir/CheckIncludeFile.cxx.o -c /code3/better/odin/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_061ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_061ae.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_061ae.dir/CheckIncludeFile.cxx.o  -o cmTC_061ae 
+make[1]: Leaving directory '/code3/better/odin/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /code3/better/odin/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2b283/fast && /usr/bin/make -f CMakeFiles/cmTC_2b283.dir/build.make CMakeFiles/cmTC_2b283.dir/build
+make[1]: Entering directory '/code3/better/odin/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2b283.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -std=c++17 -o CMakeFiles/cmTC_2b283.dir/CheckFunctionExists.cxx.o -c /code3/better/odin/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_2b283
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2b283.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_2b283.dir/CheckFunctionExists.cxx.o  -o cmTC_2b283  -lpthread 
+make[1]: Leaving directory '/code3/better/odin/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test HAVE_FLAG__ffile_prefix_map__code3_better_odin_build__deps_catch2_src__ succeeded with the following output:
+Change Dir: /code3/better/odin/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2ab79/fast && /usr/bin/make -f CMakeFiles/cmTC_2ab79.dir/build.make CMakeFiles/cmTC_2ab79.dir/build
+make[1]: Entering directory '/code3/better/odin/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2ab79.dir/src.cxx.o
+/usr/bin/c++    -DHAVE_FLAG__ffile_prefix_map__code3_better_odin_build__deps_catch2_src__   -ffile-prefix-map=/code3/better/odin/build/_deps/catch2-src/= -std=c++17 -o CMakeFiles/cmTC_2ab79.dir/src.cxx.o -c /code3/better/odin/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2ab79
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ab79.dir/link.txt --verbose=1
+/usr/bin/c++   -DHAVE_FLAG__ffile_prefix_map__code3_better_odin_build__deps_catch2_src__    CMakeFiles/cmTC_2ab79.dir/src.cxx.o  -o cmTC_2ab79 
+make[1]: Leaving directory '/code3/better/odin/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }

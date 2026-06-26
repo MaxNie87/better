@@ -1,0 +1,22 @@
+Start testing: Jun 26 19:00 HKT
+----------------------------------------------------------
+1/1 Testing: odin_tests
+1/1 Test: odin_tests
+Command: "/code3/better/odin/build/tests/odin_tests"
+Directory: /code3/better/odin/build
+"odin_tests" start time: Jun 26 19:00 HKT
+Output:
+----------------------------------------------------------
+Randomness seeded to: 268318169
+===============================================================================
+All tests passed (13 assertions in 5 test cases)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"odin_tests" end time: Jun 26 19:00 HKT
+"odin_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 26 19:00 HKT

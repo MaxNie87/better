@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/odin_demo.dir/main.cpp.o  -o odin_demo  ../src/libodin.a 
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/odin_demo.dir/main.cpp.o  -o odin_demo  ../src/libodin.a ../_deps/spdlog-build/libspdlog.a -lpthread 

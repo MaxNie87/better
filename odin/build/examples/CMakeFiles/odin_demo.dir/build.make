@@ -80,6 +80,7 @@ odin_demo_EXTERNAL_OBJECTS =
 examples/odin_demo: examples/CMakeFiles/odin_demo.dir/main.cpp.o
 examples/odin_demo: examples/CMakeFiles/odin_demo.dir/build.make
 examples/odin_demo: src/libodin.a
+examples/odin_demo: _deps/spdlog-build/libspdlog.a
 examples/odin_demo: examples/CMakeFiles/odin_demo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code3/better/odin/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable odin_demo"
 	cd /code3/better/odin/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/odin_demo.dir/link.txt --verbose=$(VERBOSE)

@@ -1,0 +1,6 @@
+#pragma once
+
+#define CSK_VERSION_MAJOR 1
+#define CSK_VERSION_MINOR 0
+#define CSK_VERSION_PATCH 0
+#define CSK_VERSION_STRING "1.0.0"

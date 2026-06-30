@@ -1,0 +1,28 @@
+{
+    "server": {
+        "http_port": 8080,
+        "rtsp_port": 554
+    },
+    "camera": {
+        "reconnect_base_ms": 1000,
+        "reconnect_max_ms": 30000,
+        "timeout_ms": 10000,
+        "idle_timeout_s": 10
+    },
+    "gb28181": {
+        "enabled": false,
+        "sip_port": 5060,
+        "server_id": "34020000002000000001",
+        "domain": "3402000000",
+        "password": "12345678",
+        "heartbeat_timeout_s": 180
+    },
+    "webrtc": {
+        "enabled": false,
+        "stun_server": "stun:stun.l.google.com:19302"
+    },
+    "log": {
+        "level": "info",
+        "file": ""
+    }
+}

@@ -1,0 +1,692 @@
+[
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/spdlog",
+  "command": "/usr/bin/c++  -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/third_party/spdlog/include  -O3 -DNDEBUG   -std=c++17 -o CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /code3/better/no1/CamStreamKit/third_party/spdlog/src/spdlog.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/spdlog/src/spdlog.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/spdlog",
+  "command": "/usr/bin/c++  -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/third_party/spdlog/include  -O3 -DNDEBUG   -std=c++17 -o CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c /code3/better/no1/CamStreamKit/third_party/spdlog/src/stdout_sinks.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/spdlog/src/stdout_sinks.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/spdlog",
+  "command": "/usr/bin/c++  -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/third_party/spdlog/include  -O3 -DNDEBUG   -std=c++17 -o CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c /code3/better/no1/CamStreamKit/third_party/spdlog/src/color_sinks.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/spdlog/src/color_sinks.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/spdlog",
+  "command": "/usr/bin/c++  -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/third_party/spdlog/include  -O3 -DNDEBUG   -std=c++17 -o CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c /code3/better/no1/CamStreamKit/third_party/spdlog/src/file_sinks.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/spdlog/src/file_sinks.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/spdlog",
+  "command": "/usr/bin/c++  -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/third_party/spdlog/include  -O3 -DNDEBUG   -std=c++17 -o CMakeFiles/spdlog.dir/src/async.cpp.o -c /code3/better/no1/CamStreamKit/third_party/spdlog/src/async.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/spdlog/src/async.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/spdlog",
+  "command": "/usr/bin/c++  -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/third_party/spdlog/include  -O3 -DNDEBUG   -std=c++17 -o CMakeFiles/spdlog.dir/src/cfg.cpp.o -c /code3/better/no1/CamStreamKit/third_party/spdlog/src/cfg.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/spdlog/src/cfg.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/spdlog",
+  "command": "/usr/bin/c++  -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/third_party/spdlog/include  -O3 -DNDEBUG   -std=c++17 -o CMakeFiles/spdlog.dir/src/bundled_fmtlib_format.cpp.o -c /code3/better/no1/CamStreamKit/third_party/spdlog/src/bundled_fmtlib_format.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/spdlog/src/bundled_fmtlib_format.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2WithMain.dir/catch2/internal/catch_main.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_main.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_main.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/benchmark/catch_chronometer.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/benchmark/catch_chronometer.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/benchmark/detail/catch_analyse.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/benchmark/detail/catch_analyse.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_benchmark_function.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/benchmark/detail/catch_benchmark_function.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/benchmark/detail/catch_benchmark_function.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_run_for_at_least.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/benchmark/detail/catch_run_for_at_least.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/benchmark/detail/catch_run_for_at_least.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_stats.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/benchmark/detail/catch_stats.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/benchmark/detail/catch_stats.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/generators/catch_generator_exception.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/generators/catch_generator_exception.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/generators/catch_generator_exception.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/generators/catch_generators.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/generators/catch_generators.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/generators/catch_generators.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/generators/catch_generators_random.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/generators/catch_generators_random.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/generators/catch_generators_random.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_automake.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_automake.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_automake.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_common_base.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_common_base.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_common_base.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_compact.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_compact.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_compact.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_console.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_console.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_console.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_cumulative_base.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_cumulative_base.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_cumulative_base.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_event_listener.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_event_listener.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_event_listener.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_helpers.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_helpers.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_json.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_json.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_junit.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_junit.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_junit.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_multi.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_multi.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_multi.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_registrars.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_registrars.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_registrars.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_sonarqube.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_sonarqube.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_sonarqube.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_streaming_base.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_streaming_base.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_streaming_base.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_tap.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_tap.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_tap.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_teamcity.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_teamcity.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_teamcity.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_xml.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_xml.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/reporters/catch_reporter_xml.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_capture.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_capture.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_capture.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_config.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_config.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_config.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_exception.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_exception.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_exception.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_generatortracker.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_generatortracker.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_generatortracker.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_registry_hub.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_registry_hub.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_registry_hub.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_reporter.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_reporter.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_factory.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_reporter_factory.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_reporter_factory.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_testcase.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_testcase.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/interfaces/catch_interfaces_testcase.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_approx.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_approx.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_approx.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_assertion_result.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_assertion_result.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_assertion_result.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_config.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_config.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_config.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_get_random_seed.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_get_random_seed.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_get_random_seed.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_message.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_message.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_message.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_registry_hub.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_registry_hub.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_session.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_session.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_session.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_tag_alias_autoregistrar.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_tag_alias_autoregistrar.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_tag_alias_autoregistrar.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_test_case_info.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_test_case_info.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_test_case_info.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_test_spec.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_test_spec.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_test_spec.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_timer.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_timer.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_timer.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_tostring.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_tostring.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_tostring.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_totals.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_totals.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_totals.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_translate_exception.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_translate_exception.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/catch_version.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_version.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/catch_version.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_assertion_handler.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_assertion_handler.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_assertion_handler.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_case_insensitive_comparisons.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_case_insensitive_comparisons.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_case_insensitive_comparisons.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_clara.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_clara.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_clara.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_commandline.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_commandline.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_commandline.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_console_colour.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_console_colour.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_console_colour.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_context.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_context.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_context.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_debug_console.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_debug_console.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_debug_console.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_debugger.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_debugger.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_debugger.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_decomposer.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_decomposer.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_decomposer.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_enforce.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_enforce.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_enforce.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_enum_values_registry.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_enum_values_registry.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_enum_values_registry.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_errno_guard.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_errno_guard.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_errno_guard.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_exception_translator_registry.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_exception_translator_registry.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_exception_translator_registry.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_fatal_condition_handler.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_fatal_condition_handler.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_fatal_condition_handler.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_floating_point_helpers.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_floating_point_helpers.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_floating_point_helpers.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_getenv.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_getenv.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_getenv.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_istream.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_istream.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_jsonwriter.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_jsonwriter.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_lazy_expr.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_lazy_expr.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_lazy_expr.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_leak_detector.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_leak_detector.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_leak_detector.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_list.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_list.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_list.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_message_info.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_message_info.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_message_info.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_output_redirect.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_output_redirect.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_output_redirect.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_parse_numbers.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_parse_numbers.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_parse_numbers.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_polyfills.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_polyfills.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_polyfills.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_random_number_generator.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_random_number_generator.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_random_number_generator.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_random_seed_generation.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_random_seed_generation.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_random_seed_generation.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_registry.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_reporter_registry.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_reporter_registry.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_spec_parser.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_reporter_spec_parser.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_reporter_spec_parser.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_result_type.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_result_type.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_reusable_string_stream.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_reusable_string_stream.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_reusable_string_stream.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_run_context.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_run_context.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_run_context.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_section.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_section.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_section.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_singletons.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_singletons.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_singletons.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_source_line_info.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_source_line_info.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_source_line_info.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_startup_exception_registry.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_startup_exception_registry.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_startup_exception_registry.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_stdstreams.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_stdstreams.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_stdstreams.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_string_manip.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_string_manip.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_string_manip.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_stringref.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_stringref.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_stringref.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_tag_alias_registry.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_tag_alias_registry.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_tag_alias_registry.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_info_hasher.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_case_info_hasher.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_case_info_hasher.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_registry_impl.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_case_registry_impl.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_case_registry_impl.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_test_case_tracker.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_case_tracker.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_case_tracker.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_test_failure_exception.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_failure_exception.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_failure_exception.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_test_registry.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_registry.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_registry.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_test_spec_parser.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_spec_parser.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_test_spec_parser.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_textflow.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_textflow.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_textflow.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_uncaught_exceptions.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_uncaught_exceptions.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_uncaught_exceptions.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_wildcard_pattern.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_wildcard_pattern.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_wildcard_pattern.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/internal/catch_xmlwriter.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_xmlwriter.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/internal/catch_xmlwriter.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_container_properties.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_container_properties.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_container_properties.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_exception.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_exception.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_exception.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_floating_point.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_floating_point.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_floating_point.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_predicate.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_predicate.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_predicate.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_quantifiers.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_quantifiers.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_quantifiers.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_string.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_string.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_string.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/matchers/catch_matchers_templated.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_templated.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/catch_matchers_templated.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/Catch2/src",
+  "command": "/usr/bin/c++   -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -ffile-prefix-map=/code3/better/no1/CamStreamKit/third_party/Catch2/= -std=gnu++17 -o CMakeFiles/Catch2.dir/catch2/matchers/internal/catch_matchers_impl.cpp.o -c /code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/internal/catch_matchers_impl.cpp",
+  "file": "/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/matchers/internal/catch_matchers_impl.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit.dir/main.cpp.o -c /code3/better/no1/CamStreamKit/src/main.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/main.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/core/buffer.cpp.o -c /code3/better/no1/CamStreamKit/src/core/buffer.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/core/buffer.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/core/config.cpp.o -c /code3/better/no1/CamStreamKit/src/core/config.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/core/config.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/core/thread_pool.cpp.o -c /code3/better/no1/CamStreamKit/src/core/thread_pool.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/core/thread_pool.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/core/media_source.cpp.o -c /code3/better/no1/CamStreamKit/src/core/media_source.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/core/media_source.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/core/media_hub.cpp.o -c /code3/better/no1/CamStreamKit/src/core/media_hub.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/core/media_hub.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/core/gop_cache.cpp.o -c /code3/better/no1/CamStreamKit/src/core/gop_cache.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/core/gop_cache.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/net/tcp_server.cpp.o -c /code3/better/no1/CamStreamKit/src/net/tcp_server.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/net/tcp_server.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/net/udp_socket.cpp.o -c /code3/better/no1/CamStreamKit/src/net/udp_socket.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/net/udp_socket.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/rtp/rtp_packet.cpp.o -c /code3/better/no1/CamStreamKit/src/rtp/rtp_packet.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/rtp/rtp_packet.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/rtp/rtp_packetizer.cpp.o -c /code3/better/no1/CamStreamKit/src/rtp/rtp_packetizer.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/rtp/rtp_packetizer.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/codec/h264_parser.cpp.o -c /code3/better/no1/CamStreamKit/src/codec/h264_parser.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/codec/h264_parser.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/codec/h265_parser.cpp.o -c /code3/better/no1/CamStreamKit/src/codec/h265_parser.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/codec/h265_parser.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/sdp/sdp_parser.cpp.o -c /code3/better/no1/CamStreamKit/src/sdp/sdp_parser.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/sdp/sdp_parser.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_parser.cpp.o -c /code3/better/no1/CamStreamKit/src/rtsp/rtsp_parser.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/rtsp/rtsp_parser.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_client.cpp.o -c /code3/better/no1/CamStreamKit/src/rtsp/rtsp_client.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/rtsp/rtsp_client.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_server.cpp.o -c /code3/better/no1/CamStreamKit/src/rtsp/rtsp_server.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/rtsp/rtsp_server.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/http/api_server.cpp.o -c /code3/better/no1/CamStreamKit/src/http/api_server.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/http/api_server.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/tests",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/test_rtsp_parser.dir/unit/test_rtsp_parser.cpp.o -c /code3/better/no1/CamStreamKit/tests/unit/test_rtsp_parser.cpp",
+  "file": "/code3/better/no1/CamStreamKit/tests/unit/test_rtsp_parser.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/tests",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/test_h264_parser.dir/unit/test_h264_parser.cpp.o -c /code3/better/no1/CamStreamKit/tests/unit/test_h264_parser.cpp",
+  "file": "/code3/better/no1/CamStreamKit/tests/unit/test_h264_parser.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/tests",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/test_rtp.dir/unit/test_rtp.cpp.o -c /code3/better/no1/CamStreamKit/tests/unit/test_rtp.cpp",
+  "file": "/code3/better/no1/CamStreamKit/tests/unit/test_rtp.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/tests",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/test_media_hub.dir/unit/test_media_hub.cpp.o -c /code3/better/no1/CamStreamKit/tests/unit/test_media_hub.cpp",
+  "file": "/code3/better/no1/CamStreamKit/tests/unit/test_media_hub.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/tests",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/test_buffer.dir/unit/test_buffer.cpp.o -c /code3/better/no1/CamStreamKit/tests/unit/test_buffer.cpp",
+  "file": "/code3/better/no1/CamStreamKit/tests/unit/test_buffer.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/examples",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o -c /code3/better/no1/CamStreamKit/examples/simple_proxy.cpp",
+  "file": "/code3/better/no1/CamStreamKit/examples/simple_proxy.cpp"
+}
+]

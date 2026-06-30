@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/camstreamkit.dir/main.cpp.o  -o camstreamkit  libcamstreamkit_lib.a ../spdlog/libspdlog.a -lpthread 

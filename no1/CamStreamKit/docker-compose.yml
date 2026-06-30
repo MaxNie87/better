@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  camstreamkit:
+    build: .
+    ports:
+      - "554:554"
+      - "5060:5060/udp"
+      - "8080:8080"
+      - "30000-30100:30000-30100/udp"
+    volumes:
+      - ./config.json:/etc/camstreamkit/config.json
+    restart: unless-stopped
+
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    depends_on:
+      - camstreamkit

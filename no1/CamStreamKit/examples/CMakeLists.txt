@@ -1,0 +1,2 @@
+add_executable(simple_proxy simple_proxy.cpp)
+target_link_libraries(simple_proxy PRIVATE camstreamkit_lib)

@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o  -o simple_proxy  ../src/libcamstreamkit_lib.a ../spdlog/libspdlog.a -lpthread 

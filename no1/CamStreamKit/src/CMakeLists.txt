@@ -16,7 +16,14 @@ set(CSK_SOURCES
     rtsp/rtsp_client.cpp
     rtsp/rtsp_server.cpp
     http/api_server.cpp
+    webrtc/dtls_context.cpp
+    webrtc/srtp_session.cpp
+    webrtc/stun.cpp
+    webrtc/webrtc_session.cpp
+    webrtc/whep_server.cpp
 )
+
+find_package(OpenSSL REQUIRED)
 
 add_library(camstreamkit_lib STATIC ${CSK_SOURCES})
 target_include_directories(camstreamkit_lib PUBLIC
@@ -27,6 +34,8 @@ target_link_libraries(camstreamkit_lib PUBLIC
     asio
     spdlog::spdlog
     nlohmann_json::nlohmann_json
+    OpenSSL::SSL
+    OpenSSL::Crypto
 )
 
 add_executable(camstreamkit main.cpp)

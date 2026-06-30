@@ -8,6 +8,7 @@
 
 #include "core/media_hub.h"
 #include "net/tcp_server.h"
+#include "webrtc/whep_server.h"
 
 namespace csk {
 
@@ -49,7 +50,8 @@ private:
 
 class ApiServer {
 public:
-    ApiServer(asio::io_context &io, uint16_t port, MediaHub &hub);
+    ApiServer(asio::io_context &io, uint16_t port, MediaHub &hub,
+              std::shared_ptr<WhepServer> whep = nullptr);
 
     void start();
     void stop();
@@ -62,10 +64,13 @@ private:
     void handle_get_stream(const HttpRequest &req, HttpResponse &resp);
     void handle_delete_stream(const HttpRequest &req, HttpResponse &resp);
     void handle_metrics(const HttpRequest &req, HttpResponse &resp);
+    void handle_whep_offer(const HttpRequest &req, HttpResponse &resp);
+    void handle_whep_delete(const HttpRequest &req, HttpResponse &resp);
 
     std::unique_ptr<TcpServer> tcp_server_;
     MediaHub &hub_;
     asio::io_context &io_;
+    std::shared_ptr<WhepServer> whep_;
 };
 
 }  // namespace csk

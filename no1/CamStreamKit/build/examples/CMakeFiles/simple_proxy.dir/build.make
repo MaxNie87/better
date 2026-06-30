@@ -81,6 +81,8 @@ examples/simple_proxy: examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o
 examples/simple_proxy: examples/CMakeFiles/simple_proxy.dir/build.make
 examples/simple_proxy: src/libcamstreamkit_lib.a
 examples/simple_proxy: spdlog/libspdlog.a
+examples/simple_proxy: /usr/lib/x86_64-linux-gnu/libssl.so
+examples/simple_proxy: /usr/lib/x86_64-linux-gnu/libcrypto.so
 examples/simple_proxy: examples/CMakeFiles/simple_proxy.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable simple_proxy"
 	cd /code3/better/no1/CamStreamKit/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/simple_proxy.dir/link.txt --verbose=$(VERBOSE)

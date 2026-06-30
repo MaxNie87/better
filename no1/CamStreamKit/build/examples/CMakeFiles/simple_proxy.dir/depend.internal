@@ -19,6 +19,9 @@ examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o
  ../src/rtsp/rtsp_parser.h
  ../src/rtsp/rtsp_server.h
  ../src/sdp/sdp_parser.h
+ ../src/webrtc/srtp_session.h
+ ../src/webrtc/webrtc_session.h
+ ../src/webrtc/whep_server.h
  ../third_party/asio/asio/include/asio.hpp
  ../third_party/asio/asio/include/asio/any_completion_executor.hpp
  ../third_party/asio/asio/include/asio/any_completion_handler.hpp

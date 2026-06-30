@@ -18,7 +18,8 @@
         "heartbeat_timeout_s": 180
     },
     "webrtc": {
-        "enabled": false,
+        "enabled": true,
+        "udp_port": 8555,
         "stun_server": "stun:stun.l.google.com:19302"
     },
     "log": {

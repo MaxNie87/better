@@ -278,6 +278,71 @@ src/CMakeFiles/camstreamkit_lib.dir/http/api_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camstreamkit_lib.dir/http/api_server.cpp.s"
 	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/no1/CamStreamKit/src/http/api_server.cpp -o CMakeFiles/camstreamkit_lib.dir/http/api_server.cpp.s
 
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.o: src/CMakeFiles/camstreamkit_lib.dir/flags.make
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.o: ../src/webrtc/dtls_context.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.o"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.o -c /code3/better/no1/CamStreamKit/src/webrtc/dtls_context.cpp
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.i"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/no1/CamStreamKit/src/webrtc/dtls_context.cpp > CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.i
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.s"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/no1/CamStreamKit/src/webrtc/dtls_context.cpp -o CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.s
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.o: src/CMakeFiles/camstreamkit_lib.dir/flags.make
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.o: ../src/webrtc/srtp_session.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.o"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.o -c /code3/better/no1/CamStreamKit/src/webrtc/srtp_session.cpp
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.i"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/no1/CamStreamKit/src/webrtc/srtp_session.cpp > CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.i
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.s"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/no1/CamStreamKit/src/webrtc/srtp_session.cpp -o CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.s
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o: src/CMakeFiles/camstreamkit_lib.dir/flags.make
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o: ../src/webrtc/stun.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o -c /code3/better/no1/CamStreamKit/src/webrtc/stun.cpp
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.i"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/no1/CamStreamKit/src/webrtc/stun.cpp > CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.i
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.s"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/no1/CamStreamKit/src/webrtc/stun.cpp -o CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.s
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o: src/CMakeFiles/camstreamkit_lib.dir/flags.make
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o: ../src/webrtc/webrtc_session.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o -c /code3/better/no1/CamStreamKit/src/webrtc/webrtc_session.cpp
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.i"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/no1/CamStreamKit/src/webrtc/webrtc_session.cpp > CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.i
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.s"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/no1/CamStreamKit/src/webrtc/webrtc_session.cpp -o CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.s
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o: src/CMakeFiles/camstreamkit_lib.dir/flags.make
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o: ../src/webrtc/whep_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o -c /code3/better/no1/CamStreamKit/src/webrtc/whep_server.cpp
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.i"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/no1/CamStreamKit/src/webrtc/whep_server.cpp > CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.i
+
+src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.s"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/no1/CamStreamKit/src/webrtc/whep_server.cpp -o CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.s
+
 # Object files for target camstreamkit_lib
 camstreamkit_lib_OBJECTS = \
 "CMakeFiles/camstreamkit_lib.dir/core/buffer.cpp.o" \
@@ -296,7 +361,12 @@ camstreamkit_lib_OBJECTS = \
 "CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_parser.cpp.o" \
 "CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_client.cpp.o" \
 "CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_server.cpp.o" \
-"CMakeFiles/camstreamkit_lib.dir/http/api_server.cpp.o"
+"CMakeFiles/camstreamkit_lib.dir/http/api_server.cpp.o" \
+"CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.o" \
+"CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.o" \
+"CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o" \
+"CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o" \
+"CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o"
 
 # External object files for target camstreamkit_lib
 camstreamkit_lib_EXTERNAL_OBJECTS =
@@ -318,9 +388,14 @@ src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_parser.
 src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_client.cpp.o
 src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_server.cpp.o
 src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/http/api_server.cpp.o
+src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.o
+src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.o
+src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o
+src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o
+src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o
 src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/build.make
 src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX static library libcamstreamkit_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library libcamstreamkit_lib.a"
 	cd /code3/better/no1/CamStreamKit/build/src && $(CMAKE_COMMAND) -P CMakeFiles/camstreamkit_lib.dir/cmake_clean_target.cmake
 	cd /code3/better/no1/CamStreamKit/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/camstreamkit_lib.dir/link.txt --verbose=$(VERBOSE)
 

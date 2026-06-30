@@ -82,6 +82,8 @@ tests/test_rtsp_parser: tests/CMakeFiles/test_rtsp_parser.dir/build.make
 tests/test_rtsp_parser: src/libcamstreamkit_lib.a
 tests/test_rtsp_parser: Catch2/src/libCatch2Main.a
 tests/test_rtsp_parser: spdlog/libspdlog.a
+tests/test_rtsp_parser: /usr/lib/x86_64-linux-gnu/libssl.so
+tests/test_rtsp_parser: /usr/lib/x86_64-linux-gnu/libcrypto.so
 tests/test_rtsp_parser: Catch2/src/libCatch2.a
 tests/test_rtsp_parser: tests/CMakeFiles/test_rtsp_parser.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_rtsp_parser"

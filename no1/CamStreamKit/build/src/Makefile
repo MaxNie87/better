@@ -637,6 +637,141 @@ sdp/sdp_parser.cpp.s:
 	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/sdp/sdp_parser.cpp.s
 .PHONY : sdp/sdp_parser.cpp.s
 
+webrtc/dtls_context.o: webrtc/dtls_context.cpp.o
+
+.PHONY : webrtc/dtls_context.o
+
+# target to build an object file
+webrtc/dtls_context.cpp.o:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.o
+.PHONY : webrtc/dtls_context.cpp.o
+
+webrtc/dtls_context.i: webrtc/dtls_context.cpp.i
+
+.PHONY : webrtc/dtls_context.i
+
+# target to preprocess a source file
+webrtc/dtls_context.cpp.i:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.i
+.PHONY : webrtc/dtls_context.cpp.i
+
+webrtc/dtls_context.s: webrtc/dtls_context.cpp.s
+
+.PHONY : webrtc/dtls_context.s
+
+# target to generate assembly for a file
+webrtc/dtls_context.cpp.s:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.s
+.PHONY : webrtc/dtls_context.cpp.s
+
+webrtc/srtp_session.o: webrtc/srtp_session.cpp.o
+
+.PHONY : webrtc/srtp_session.o
+
+# target to build an object file
+webrtc/srtp_session.cpp.o:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.o
+.PHONY : webrtc/srtp_session.cpp.o
+
+webrtc/srtp_session.i: webrtc/srtp_session.cpp.i
+
+.PHONY : webrtc/srtp_session.i
+
+# target to preprocess a source file
+webrtc/srtp_session.cpp.i:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.i
+.PHONY : webrtc/srtp_session.cpp.i
+
+webrtc/srtp_session.s: webrtc/srtp_session.cpp.s
+
+.PHONY : webrtc/srtp_session.s
+
+# target to generate assembly for a file
+webrtc/srtp_session.cpp.s:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.s
+.PHONY : webrtc/srtp_session.cpp.s
+
+webrtc/stun.o: webrtc/stun.cpp.o
+
+.PHONY : webrtc/stun.o
+
+# target to build an object file
+webrtc/stun.cpp.o:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o
+.PHONY : webrtc/stun.cpp.o
+
+webrtc/stun.i: webrtc/stun.cpp.i
+
+.PHONY : webrtc/stun.i
+
+# target to preprocess a source file
+webrtc/stun.cpp.i:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.i
+.PHONY : webrtc/stun.cpp.i
+
+webrtc/stun.s: webrtc/stun.cpp.s
+
+.PHONY : webrtc/stun.s
+
+# target to generate assembly for a file
+webrtc/stun.cpp.s:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.s
+.PHONY : webrtc/stun.cpp.s
+
+webrtc/webrtc_session.o: webrtc/webrtc_session.cpp.o
+
+.PHONY : webrtc/webrtc_session.o
+
+# target to build an object file
+webrtc/webrtc_session.cpp.o:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o
+.PHONY : webrtc/webrtc_session.cpp.o
+
+webrtc/webrtc_session.i: webrtc/webrtc_session.cpp.i
+
+.PHONY : webrtc/webrtc_session.i
+
+# target to preprocess a source file
+webrtc/webrtc_session.cpp.i:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.i
+.PHONY : webrtc/webrtc_session.cpp.i
+
+webrtc/webrtc_session.s: webrtc/webrtc_session.cpp.s
+
+.PHONY : webrtc/webrtc_session.s
+
+# target to generate assembly for a file
+webrtc/webrtc_session.cpp.s:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.s
+.PHONY : webrtc/webrtc_session.cpp.s
+
+webrtc/whep_server.o: webrtc/whep_server.cpp.o
+
+.PHONY : webrtc/whep_server.o
+
+# target to build an object file
+webrtc/whep_server.cpp.o:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o
+.PHONY : webrtc/whep_server.cpp.o
+
+webrtc/whep_server.i: webrtc/whep_server.cpp.i
+
+.PHONY : webrtc/whep_server.i
+
+# target to preprocess a source file
+webrtc/whep_server.cpp.i:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.i
+.PHONY : webrtc/whep_server.cpp.i
+
+webrtc/whep_server.s: webrtc/whep_server.cpp.s
+
+.PHONY : webrtc/whep_server.s
+
+# target to generate assembly for a file
+webrtc/whep_server.cpp.s:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.s
+.PHONY : webrtc/whep_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -702,6 +837,21 @@ help:
 	@echo "... sdp/sdp_parser.o"
 	@echo "... sdp/sdp_parser.i"
 	@echo "... sdp/sdp_parser.s"
+	@echo "... webrtc/dtls_context.o"
+	@echo "... webrtc/dtls_context.i"
+	@echo "... webrtc/dtls_context.s"
+	@echo "... webrtc/srtp_session.o"
+	@echo "... webrtc/srtp_session.i"
+	@echo "... webrtc/srtp_session.s"
+	@echo "... webrtc/stun.o"
+	@echo "... webrtc/stun.i"
+	@echo "... webrtc/stun.s"
+	@echo "... webrtc/webrtc_session.o"
+	@echo "... webrtc/webrtc_session.i"
+	@echo "... webrtc/webrtc_session.s"
+	@echo "... webrtc/whep_server.o"
+	@echo "... webrtc/whep_server.i"
+	@echo "... webrtc/whep_server.s"
 .PHONY : help
 
 

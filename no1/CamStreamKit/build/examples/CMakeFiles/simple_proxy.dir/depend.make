@@ -18,6 +18,9 @@ examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/rtsp/rtsp_client
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/rtsp/rtsp_parser.h
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/rtsp/rtsp_server.h
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/sdp/sdp_parser.h
+examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/webrtc/srtp_session.h
+examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/webrtc/webrtc_session.h
+examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/webrtc/whep_server.h
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../third_party/asio/asio/include/asio.hpp
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../third_party/asio/asio/include/asio/any_completion_executor.hpp
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../third_party/asio/asio/include/asio/any_completion_handler.hpp

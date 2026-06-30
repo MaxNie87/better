@@ -11,6 +11,8 @@ src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/net/tcp_server.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/rtp/rtp_packet.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/rtp/rtp_packetizer.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/rtsp/rtsp_parser.h
+src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/webrtc/srtp_session.h
+src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/webrtc/webrtc_session.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../third_party/asio/asio/include/asio.hpp
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../third_party/asio/asio/include/asio/any_completion_executor.hpp
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../third_party/asio/asio/include/asio/any_completion_handler.hpp
@@ -641,4 +643,5 @@ src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/core/media_hub.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/http/api_server.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/main.cpp
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/rtsp/rtsp_server.h
+src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/webrtc/whep_server.h
 

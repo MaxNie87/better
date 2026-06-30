@@ -10,6 +10,7 @@
 #include "core/media_hub.h"
 #include "http/api_server.h"
 #include "rtsp/rtsp_server.h"
+#include "webrtc/whep_server.h"
 
 int main(int argc, char *argv[]) {
     std::string config_path = "config.json";
@@ -43,8 +44,16 @@ int main(int argc, char *argv[]) {
     csk::RtspServer rtsp_server(io, config.server.rtsp_port, hub);
     rtsp_server.start();
 
-    // HTTP API Server
-    csk::ApiServer api_server(io, config.server.http_port, hub);
+    // WebRTC/WHEP Server
+    auto whep_server = std::make_shared<csk::WhepServer>(io, hub, config.webrtc.udp_port);
+    if (config.webrtc.enabled) {
+        whep_server->start();
+        CSK_LOG_I("WebRTC/WHEP on UDP port {}", whep_server->udp_port());
+    }
+
+    // HTTP API Server (with WHEP integration)
+    csk::ApiServer api_server(io, config.server.http_port, hub,
+                              config.webrtc.enabled ? whep_server : nullptr);
     api_server.start();
 
     CSK_LOG_I("RTSP server on port {}", config.server.rtsp_port);

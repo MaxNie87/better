@@ -31,6 +31,7 @@ struct Gb28181Config {
 
 struct WebRtcConfig {
     bool enabled = false;
+    uint16_t udp_port = 8555;
     std::string stun_server = "stun:stun.l.google.com:19302";
 };
 
@@ -88,6 +89,7 @@ inline Config Config::from_file(const std::string &path) {
         if (j.contains("webrtc")) {
             auto &w = j["webrtc"];
             if (w.contains("enabled")) config.webrtc.enabled = w["enabled"];
+            if (w.contains("udp_port")) config.webrtc.udp_port = w["udp_port"];
             if (w.contains("stun_server")) config.webrtc.stun_server = w["stun_server"];
         }
 

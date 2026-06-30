@@ -118,6 +118,40 @@ string
 vector
 -
 
+../src/webrtc/srtp_session.h
+openssl/hmac.h
+-
+cstdint
+-
+vector
+-
+
+../src/webrtc/webrtc_session.h
+asio.hpp
+-
+openssl/ssl.h
+-
+atomic
+-
+functional
+-
+memory
+-
+string
+-
+vector
+-
+codec/h264_parser.h
+../src/webrtc/codec/h264_parser.h
+core/media_frame.h
+../src/webrtc/core/media_frame.h
+core/media_source.h
+../src/webrtc/core/media_source.h
+rtp/rtp_packetizer.h
+../src/webrtc/rtp/rtp_packetizer.h
+webrtc/srtp_session.h
+../src/webrtc/webrtc/srtp_session.h
+
 ../third_party/asio/asio/include/asio.hpp
 asio/any_completion_executor.hpp
 ../third_party/asio/asio/include/asio/any_completion_executor.hpp
@@ -11117,6 +11151,8 @@ core/media_hub.h
 /code3/better/no1/CamStreamKit/src/http/core/media_hub.h
 net/tcp_server.h
 /code3/better/no1/CamStreamKit/src/http/net/tcp_server.h
+webrtc/whep_server.h
+/code3/better/no1/CamStreamKit/src/http/webrtc/whep_server.h
 
 /code3/better/no1/CamStreamKit/src/main.cpp
 asio.hpp
@@ -11141,6 +11177,8 @@ http/api_server.h
 /code3/better/no1/CamStreamKit/src/http/api_server.h
 rtsp/rtsp_server.h
 /code3/better/no1/CamStreamKit/src/rtsp/rtsp_server.h
+webrtc/whep_server.h
+/code3/better/no1/CamStreamKit/src/webrtc/whep_server.h
 
 /code3/better/no1/CamStreamKit/src/rtsp/rtsp_server.h
 asio.hpp
@@ -11161,4 +11199,20 @@ rtp/rtp_packetizer.h
 /code3/better/no1/CamStreamKit/src/rtsp/rtp/rtp_packetizer.h
 rtsp/rtsp_parser.h
 /code3/better/no1/CamStreamKit/src/rtsp/rtsp/rtsp_parser.h
+
+/code3/better/no1/CamStreamKit/src/webrtc/whep_server.h
+asio.hpp
+-
+memory
+-
+mutex
+-
+string
+-
+unordered_map
+-
+core/media_hub.h
+/code3/better/no1/CamStreamKit/src/webrtc/core/media_hub.h
+webrtc/webrtc_session.h
+/code3/better/no1/CamStreamKit/src/webrtc/webrtc/webrtc_session.h
 

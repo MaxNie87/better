@@ -16,6 +16,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_parser.cpp.o"
   "CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_server.cpp.o"
   "CMakeFiles/camstreamkit_lib.dir/sdp/sdp_parser.cpp.o"
+  "CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.o"
+  "CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.o"
+  "CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o"
+  "CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o"
+  "CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o"
   "libcamstreamkit_lib.a"
   "libcamstreamkit_lib.pdb"
 )

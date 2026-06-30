@@ -21,6 +21,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/code3/better/no1/CamStreamKit/src/rtsp/rtsp_parser.cpp" "/code3/better/no1/CamStreamKit/build/src/CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_parser.cpp.o"
   "/code3/better/no1/CamStreamKit/src/rtsp/rtsp_server.cpp" "/code3/better/no1/CamStreamKit/build/src/CMakeFiles/camstreamkit_lib.dir/rtsp/rtsp_server.cpp.o"
   "/code3/better/no1/CamStreamKit/src/sdp/sdp_parser.cpp" "/code3/better/no1/CamStreamKit/build/src/CMakeFiles/camstreamkit_lib.dir/sdp/sdp_parser.cpp.o"
+  "/code3/better/no1/CamStreamKit/src/webrtc/dtls_context.cpp" "/code3/better/no1/CamStreamKit/build/src/CMakeFiles/camstreamkit_lib.dir/webrtc/dtls_context.cpp.o"
+  "/code3/better/no1/CamStreamKit/src/webrtc/srtp_session.cpp" "/code3/better/no1/CamStreamKit/build/src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.o"
+  "/code3/better/no1/CamStreamKit/src/webrtc/stun.cpp" "/code3/better/no1/CamStreamKit/build/src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o"
+  "/code3/better/no1/CamStreamKit/src/webrtc/webrtc_session.cpp" "/code3/better/no1/CamStreamKit/build/src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o"
+  "/code3/better/no1/CamStreamKit/src/webrtc/whep_server.cpp" "/code3/better/no1/CamStreamKit/build/src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

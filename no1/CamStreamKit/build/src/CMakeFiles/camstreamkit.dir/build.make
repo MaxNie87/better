@@ -81,6 +81,8 @@ src/camstreamkit: src/CMakeFiles/camstreamkit.dir/main.cpp.o
 src/camstreamkit: src/CMakeFiles/camstreamkit.dir/build.make
 src/camstreamkit: src/libcamstreamkit_lib.a
 src/camstreamkit: spdlog/libspdlog.a
+src/camstreamkit: /usr/lib/x86_64-linux-gnu/libssl.so
+src/camstreamkit: /usr/lib/x86_64-linux-gnu/libcrypto.so
 src/camstreamkit: src/CMakeFiles/camstreamkit.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable camstreamkit"
 	cd /code3/better/no1/CamStreamKit/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/camstreamkit.dir/link.txt --verbose=$(VERBOSE)

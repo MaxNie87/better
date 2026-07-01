@@ -102,7 +102,7 @@ const char *kIndexHtml = R"HTMLPAGE(
     let streams=[];
     async function loadStreams(){try{const r=await fetch(API_BASE+'/api/v1/streams');if(!r.ok)throw new Error('HTTP '+r.status);streams=await r.json();renderStreams();updateStats()}catch(e){document.getElementById('stream-list').innerHTML='<div class="empty-state" style="grid-column:1/-1"><p>无法连接服务器</p></div>'}}
     function renderStreams(){const c=document.getElementById('stream-list');if(!streams.length){c.innerHTML='<div class="empty-state" style="grid-column:1/-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg><p>暂无摄像头流</p><p style="margin-top:8px;font-size:13px">在上方添加第一个 RTSP 摄像头</p></div>';return}
-    c.innerHTML=streams.map(s=>{const sc=s.status==='online'?'status-online':s.status==='connecting'?'status-connecting':'status-offline';const st=s.status==='online'?'在线':s.status==='connecting'?'连接中':'离线';const rtsp='rtsp://'+location.hostname+':554/stream/'+s.id;return '<div class="stream-card"><div class="stream-card-header"><div class="stream-id">'+s.id+'</div><span class="status-badge '+sc+'">'+st+'</span></div><div class="stream-info"><div class="info-row"><span class="label">RTSP</span><span class="value">'+rtsp+'</span></div><div class="info-row"><span class="label">WebRTC</span><span class="value">POST /whep/'+s.id+'</span></div><div class="info-row"><span class="label">编码</span><span class="value">'+(s.codec||'H264')+' | '+(s.bitrate_kbps||0)+' kbps</span></div></div><div class="stream-footer"><div class="viewer-count">'+(s.subscribers||0)+' 观看</div><div style="display:flex;gap:8px"><button class="btn btn-play btn-sm" onclick="playStream(\''+s.id+'\')">播放</button><button class="btn btn-ghost btn-sm" onclick="copyUrl(\''+rtsp+'\')">复制</button><button class="btn btn-danger btn-sm" onclick="deleteStream(\''+s.id+'\')">删除</button></div></div></div>'}).join('')}
+    c.innerHTML=streams.map(s=>{const sc=s.status==='online'?'status-online':s.status==='connecting'?'status-connecting':'status-offline';const st=s.status==='online'?'在线':s.status==='connecting'?'连接中':'离线';const rtsp='rtsp://'+location.hostname+':554/stream/'+s.id;const whep=location.protocol+'//'+location.host+'/whep/'+s.id;return '<div class="stream-card"><div class="stream-card-header"><div class="stream-id">'+s.id+'</div><span class="status-badge '+sc+'">'+st+'</span></div><div class="stream-info"><div class="info-row"><span class="label">RTSP</span><span class="value">'+rtsp+'</span></div><div class="info-row"><span class="label">WebRTC</span><span class="value">'+whep+'</span></div><div class="info-row"><span class="label">GB28181</span><span class="value">'+(s.gb28181_id||'未注册')+'</span></div><div class="info-row"><span class="label">编码</span><span class="value">'+(s.codec||'H264')+' | '+(s.bitrate_kbps||0)+' kbps</span></div></div><div class="stream-footer"><div class="viewer-count">'+(s.subscribers||0)+' 观看</div><div style="display:flex;gap:8px"><button class="btn btn-play btn-sm" onclick="playStream(\''+s.id+'\')">播放</button><button class="btn btn-ghost btn-sm" onclick="copyUrl(\''+whep+'\')">复制</button><button class="btn btn-danger btn-sm" onclick="deleteStream(\''+s.id+'\')">删除</button></div></div></div>'}).join('')}
     function updateStats(){document.getElementById('online-count').textContent=streams.filter(s=>s.status==='online').length;document.getElementById('total-count').textContent=streams.length}
     async function addStream(){const id=document.getElementById('input-id').value.trim();const url=document.getElementById('input-url').value.trim();if(!id||!url){showToast('请填写 ID 和 URL','error');return}try{const r=await fetch(API_BASE+'/api/v1/streams',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({id,url})});if(r.ok){document.getElementById('input-id').value='';document.getElementById('input-url').value='';showToast('已添加 '+id,'success');loadStreams()}else{const e=await r.json().catch(()=>({}));showToast(e.error||'添加失败','error')}}catch(e){showToast('网络错误','error')}}
     async function deleteStream(id){if(!confirm('确认删除 "'+id+'"？'))return;try{const r=await fetch(API_BASE+'/api/v1/streams/'+id,{method:'DELETE'});if(r.ok||r.status===204){showToast('已删除 '+id,'success');loadStreams()}else showToast('删除失败','error')}catch(e){showToast('网络错误','error')}}
@@ -111,7 +111,7 @@ const char *kIndexHtml = R"HTMLPAGE(
     document.getElementById('input-url').addEventListener('keydown',e=>{if(e.key==='Enter')addStream()});
     document.getElementById('input-id').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('input-url').focus()});
     // WebRTC/WHEP Player
-    async function playStream(id){closePlayer();document.getElementById('player-modal').classList.add('active');document.getElementById('player-title').textContent='播放: '+id;document.getElementById('player-status').textContent='正在建立 WebRTC 连接...';try{const pc=new RTCPeerConnection({iceServers:[{urls:'stun:stun.l.google.com:19302'}]});window._pc=pc;pc.addTransceiver('video',{direction:'recvonly'});pc.ontrack=ev=>{document.getElementById('player-video').srcObject=ev.streams[0];document.getElementById('player-status').textContent='已连接 - 正在播放'};pc.oniceconnectionstatechange=()=>{const s=pc.iceConnectionState;if(s==='disconnected'||s==='failed')document.getElementById('player-status').textContent='连接断开: '+s};const offer=await pc.createOffer();await pc.setLocalDescription(offer);await new Promise(r=>{if(pc.iceGatheringState==='complete')r();else{pc.onicegatheringstatechange=()=>{if(pc.iceGatheringState==='complete')r()};setTimeout(r,3000)}});const resp=await fetch('/whep/'+id,{method:'POST',headers:{'Content-Type':'application/sdp'},body:pc.localDescription.sdp});if(!resp.ok){document.getElementById('player-status').textContent='连接失败: '+resp.status;return}const answer=await resp.text();await pc.setRemoteDescription({type:'answer',sdp:answer});document.getElementById('player-status').textContent='等待视频流...'}catch(e){document.getElementById('player-status').textContent='错误: '+e.message}}
+    async function playStream(id){closePlayer();document.getElementById('player-modal').classList.add('active');document.getElementById('player-title').textContent='播放: '+id;document.getElementById('player-status').textContent='正在建立 WebRTC 连接...';try{const pc=new RTCPeerConnection({iceServers:[{urls:'stun:stun.l.google.com:19302'}]});window._pc=pc;pc.addTransceiver('video',{direction:'recvonly'});pc.ontrack=ev=>{document.getElementById('player-video').srcObject=ev.streams[0];document.getElementById('player-status').textContent='已连接 - 正在播放'};pc.oniceconnectionstatechange=()=>{const s=pc.iceConnectionState;if(s==='disconnected'||s==='failed')document.getElementById('player-status').textContent='连接断开: '+s};const offer=await pc.createOffer();await pc.setLocalDescription(offer);await new Promise(r=>{if(pc.iceGatheringState==='complete')r();else{pc.onicegatheringstatechange=()=>{if(pc.iceGatheringState==='complete')r()};setTimeout(r,3000)}});const resp=await fetch('/whep/'+id,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sdp:pc.localDescription.sdp})});const data=await resp.json();if(!resp.ok){document.getElementById('player-status').textContent='连接失败: '+(data.error||resp.status);return}if(!data.sdp){document.getElementById('player-status').textContent='服务器未返回 SDP';return}await pc.setRemoteDescription({type:'answer',sdp:data.sdp});document.getElementById('player-status').textContent='等待视频流...'}catch(e){document.getElementById('player-status').textContent='错误: '+e.message}}
     function closePlayer(){document.getElementById('player-modal').classList.remove('active');document.getElementById('player-video').srcObject=null;if(window._pc){window._pc.close();window._pc=null}}
     document.getElementById('player-modal').addEventListener('click',e=>{if(e.target===e.currentTarget)closePlayer()});
     loadStreams();setInterval(loadStreams,5000);
@@ -243,8 +243,9 @@ void HttpSession::process_request() {
 // --- ApiServer ---
 
 ApiServer::ApiServer(asio::io_context &io, uint16_t port, MediaHub &hub,
-                     std::shared_ptr<WhepServer> whep)
-    : hub_(hub), io_(io), whep_(std::move(whep)) {
+                     std::shared_ptr<WhepServer> whep,
+                     std::shared_ptr<Gb28181Server> gb28181)
+    : hub_(hub), io_(io), whep_(std::move(whep)), gb28181_(std::move(gb28181)) {
     tcp_server_ = std::make_unique<TcpServer>(
         io, port, [this](asio::ip::tcp::socket socket) -> std::shared_ptr<Session> {
             return std::make_shared<HttpSession>(
@@ -290,6 +291,12 @@ void ApiServer::handle_request(const HttpRequest &req, HttpResponse &resp) {
         handle_whep_offer(req, resp);
     } else if (req.method == "DELETE" && req.path.find("/whep/resource/") == 0) {
         handle_whep_delete(req, resp);
+    } else if (req.method == "GET" && req.path == "/api/v1/gb28181/devices") {
+        handle_gb28181_devices(req, resp);
+    } else if (req.method == "POST" && req.path.find("/api/v1/gb28181/invite") == 0) {
+        handle_gb28181_invite(req, resp);
+    } else if (req.method == "POST" && req.path.find("/api/v1/gb28181/bye/") == 0) {
+        handle_gb28181_bye(req, resp);
     } else if (req.method == "GET" && req.path == "/metrics") {
         handle_metrics(req, resp);
     } else if (req.method == "GET" && req.path == "/api/v1/version") {
@@ -314,6 +321,7 @@ void ApiServer::handle_list_streams(const HttpRequest &, HttpResponse &resp) {
         j["subscribers"] = s.subscriber_count;
         j["bitrate_kbps"] = s.bitrate_kbps;
         j["fps"] = s.fps;
+        j["gb28181_id"] = s.gb28181_device_id;
         arr.push_back(j);
     }
     resp.set_json(arr.dump());
@@ -406,7 +414,16 @@ void ApiServer::handle_whep_offer(const HttpRequest &req, HttpResponse &resp) {
         return;
     }
 
-    auto answer = whep_->handle_offer(stream_id, req.body);
+    // Extract offer SDP: may come as raw body or JSON-wrapped
+    std::string offer_sdp = req.body;
+    if (!offer_sdp.empty() && offer_sdp[0] == '{') {
+        try {
+            auto j = nlohmann::json::parse(offer_sdp);
+            offer_sdp = j.value("sdp", offer_sdp);
+        } catch (...) {}
+    }
+
+    auto answer = whep_->handle_offer(stream_id, offer_sdp);
     if (answer.sdp.empty()) {
         resp.set_status(404);
         resp.set_json(R"({"error":"stream not found or offer failed"})");
@@ -414,9 +431,12 @@ void ApiServer::handle_whep_offer(const HttpRequest &req, HttpResponse &resp) {
     }
 
     resp.set_status(201);
-    resp.headers["Content-Type"] = "application/sdp";
+    resp.headers["Content-Type"] = "application/json";
     resp.headers["Location"] = "/whep/resource/" + answer.resource_id;
-    resp.body = answer.sdp;
+    nlohmann::json j;
+    j["sdp"] = answer.sdp;
+    j["resource_id"] = answer.resource_id;
+    resp.set_json(j.dump());
 }
 
 void ApiServer::handle_whep_delete(const HttpRequest &req, HttpResponse &resp) {
@@ -434,6 +454,78 @@ void ApiServer::handle_whep_delete(const HttpRequest &req, HttpResponse &resp) {
         resp.set_status(404);
         resp.set_json(R"({"error":"session not found"})");
     }
+}
+
+void ApiServer::handle_gb28181_devices(const HttpRequest &, HttpResponse &resp) {
+    if (!gb28181_) {
+        resp.set_status(503, "Service Unavailable");
+        resp.set_json(R"({"error":"GB28181 not enabled"})");
+        return;
+    }
+
+    auto devices = gb28181_->device_list();
+    nlohmann::json arr = nlohmann::json::array();
+    for (auto &id : devices) {
+        nlohmann::json j;
+        j["device_id"] = id;
+        j["online"] = gb28181_->is_device_online(id);
+        arr.push_back(j);
+    }
+    resp.set_json(arr.dump());
+}
+
+void ApiServer::handle_gb28181_invite(const HttpRequest &req, HttpResponse &resp) {
+    if (!gb28181_) {
+        resp.set_status(503, "Service Unavailable");
+        resp.set_json(R"({"error":"GB28181 not enabled"})");
+        return;
+    }
+
+    try {
+        auto j = nlohmann::json::parse(req.body);
+        std::string device_id = j.value("device_id", "");
+        std::string stream_id = j.value("stream_id", "");
+
+        if (device_id.empty() || stream_id.empty()) {
+            resp.set_status(400);
+            resp.set_json(R"({"error":"device_id and stream_id are required"})");
+            return;
+        }
+
+        if (gb28181_->invite_stream(device_id, stream_id)) {
+            nlohmann::json result;
+            result["stream_id"] = stream_id;
+            result["device_id"] = device_id;
+            result["status"] = "connecting";
+            resp.set_status(201);
+            resp.set_json(result.dump());
+        } else {
+            resp.set_status(400);
+            resp.set_json(R"({"error":"invite failed, device not registered"})");
+        }
+    } catch (const std::exception &e) {
+        resp.set_status(400);
+        resp.set_json(std::string(R"({"error":")") + e.what() + R"("})");
+    }
+}
+
+void ApiServer::handle_gb28181_bye(const HttpRequest &req, HttpResponse &resp) {
+    if (!gb28181_) {
+        resp.set_status(503, "Service Unavailable");
+        resp.set_json(R"({"error":"GB28181 not enabled"})");
+        return;
+    }
+
+    std::string stream_id = req.path.substr(std::string("/api/v1/gb28181/bye/").size());
+    if (stream_id.empty()) {
+        resp.set_status(400);
+        resp.set_json(R"({"error":"stream_id required"})");
+        return;
+    }
+
+    gb28181_->bye_stream(stream_id);
+    resp.set_status(204);
+    resp.body.clear();
 }
 
 void ApiServer::handle_metrics(const HttpRequest &, HttpResponse &resp) {

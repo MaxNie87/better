@@ -24,6 +24,7 @@ struct WebRtcSessionConfig {
     std::string remote_ufrag;
     std::string remote_pwd;
     uint32_t ssrc = 0;
+    uint8_t payload_type = 96;
 };
 
 enum class WebRtcState {
@@ -64,6 +65,7 @@ private:
     void start_dtls();
     void do_dtls_handshake();
     void on_dtls_connected();
+    void send_nals_as_rtp(const std::vector<NalUnit> &nals);
     void send_srtp_packet(std::vector<uint8_t> &rtp_packet);
 
     WebRtcSessionConfig config_;
@@ -83,6 +85,9 @@ private:
     RtpPacketizer packetizer_;
     H264Parser h264_parser_;
     uint32_t timestamp_ = 0;
+    bool got_keyframe_ = false;
+    std::vector<uint8_t> cached_sps_;
+    std::vector<uint8_t> cached_pps_;
 
     std::function<void(const uint8_t *, size_t, const asio::ip::udp::endpoint &)> udp_send_;
 };

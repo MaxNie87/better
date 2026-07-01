@@ -47,6 +47,7 @@ std::vector<StreamInfo> MediaHub::list_all() const {
         info.status = source->status();
         info.bitrate_kbps = source->stats().current_bitrate_kbps;
         info.fps = source->stats().current_fps;
+        info.gb28181_device_id = source->gb28181_device_id();
         result.push_back(std::move(info));
     }
 

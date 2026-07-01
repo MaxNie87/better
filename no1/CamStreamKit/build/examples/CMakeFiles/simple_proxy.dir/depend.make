@@ -10,8 +10,12 @@ examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/core/media_frame
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/core/media_hub.h
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/core/media_source.h
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/core/timer.h
+examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/gb28181/gb28181_server.h
+examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/gb28181/ps_demuxer.h
+examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/gb28181/sip_message.h
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/http/api_server.h
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/net/tcp_server.h
+examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/net/udp_socket.h
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/rtp/rtp_packet.h
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/rtp/rtp_packetizer.h
 examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o: ../src/rtsp/rtsp_client.h

@@ -7,6 +7,7 @@
 #include <string>
 
 #include "core/media_hub.h"
+#include "gb28181/gb28181_server.h"
 #include "net/tcp_server.h"
 #include "webrtc/whep_server.h"
 
@@ -51,7 +52,8 @@ private:
 class ApiServer {
 public:
     ApiServer(asio::io_context &io, uint16_t port, MediaHub &hub,
-              std::shared_ptr<WhepServer> whep = nullptr);
+              std::shared_ptr<WhepServer> whep = nullptr,
+              std::shared_ptr<Gb28181Server> gb28181 = nullptr);
 
     void start();
     void stop();
@@ -67,10 +69,15 @@ private:
     void handle_whep_offer(const HttpRequest &req, HttpResponse &resp);
     void handle_whep_delete(const HttpRequest &req, HttpResponse &resp);
 
+    void handle_gb28181_devices(const HttpRequest &req, HttpResponse &resp);
+    void handle_gb28181_invite(const HttpRequest &req, HttpResponse &resp);
+    void handle_gb28181_bye(const HttpRequest &req, HttpResponse &resp);
+
     std::unique_ptr<TcpServer> tcp_server_;
     MediaHub &hub_;
     asio::io_context &io_;
     std::shared_ptr<WhepServer> whep_;
+    std::shared_ptr<Gb28181Server> gb28181_;
 };
 
 }  // namespace csk

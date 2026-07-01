@@ -21,6 +21,9 @@ set(CSK_SOURCES
     webrtc/stun.cpp
     webrtc/webrtc_session.cpp
     webrtc/whep_server.cpp
+    gb28181/sip_message.cpp
+    gb28181/ps_demuxer.cpp
+    gb28181/gb28181_server.cpp
 )
 
 find_package(OpenSSL REQUIRED)

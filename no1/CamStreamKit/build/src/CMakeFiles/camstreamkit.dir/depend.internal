@@ -8,7 +8,11 @@ src/CMakeFiles/camstreamkit.dir/main.cpp.o
  ../src/core/gop_cache.h
  ../src/core/media_frame.h
  ../src/core/media_source.h
+ ../src/core/timer.h
+ ../src/gb28181/ps_demuxer.h
+ ../src/gb28181/sip_message.h
  ../src/net/tcp_server.h
+ ../src/net/udp_socket.h
  ../src/rtp/rtp_packet.h
  ../src/rtp/rtp_packetizer.h
  ../src/rtsp/rtsp_parser.h
@@ -641,6 +645,7 @@ src/CMakeFiles/camstreamkit.dir/main.cpp.o
  /code3/better/no1/CamStreamKit/src/core/config.h
  /code3/better/no1/CamStreamKit/src/core/logger.h
  /code3/better/no1/CamStreamKit/src/core/media_hub.h
+ /code3/better/no1/CamStreamKit/src/gb28181/gb28181_server.h
  /code3/better/no1/CamStreamKit/src/http/api_server.h
  /code3/better/no1/CamStreamKit/src/main.cpp
  /code3/better/no1/CamStreamKit/src/rtsp/rtsp_server.h

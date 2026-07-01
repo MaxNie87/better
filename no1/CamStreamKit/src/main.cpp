@@ -8,6 +8,7 @@
 #include "core/config.h"
 #include "core/logger.h"
 #include "core/media_hub.h"
+#include "gb28181/gb28181_server.h"
 #include "http/api_server.h"
 #include "rtsp/rtsp_server.h"
 #include "webrtc/whep_server.h"
@@ -51,9 +52,18 @@ int main(int argc, char *argv[]) {
         CSK_LOG_I("WebRTC/WHEP on UDP port {}", whep_server->udp_port());
     }
 
-    // HTTP API Server (with WHEP integration)
+    // GB28181 Server
+    std::shared_ptr<csk::Gb28181Server> gb28181_server;
+    if (config.gb28181.enabled) {
+        gb28181_server = std::make_shared<csk::Gb28181Server>(io, config.gb28181, hub);
+        gb28181_server->start();
+        CSK_LOG_I("GB28181 SIP on port {}", config.gb28181.sip_port);
+    }
+
+    // HTTP API Server (with WHEP and GB28181 integration)
     csk::ApiServer api_server(io, config.server.http_port, hub,
-                              config.webrtc.enabled ? whep_server : nullptr);
+                              config.webrtc.enabled ? whep_server : nullptr,
+                              gb28181_server);
     api_server.start();
 
     CSK_LOG_I("RTSP server on port {}", config.server.rtsp_port);
@@ -65,6 +75,7 @@ int main(int argc, char *argv[]) {
         CSK_LOG_I("Received signal {}, shutting down...", sig);
         rtsp_server.stop();
         api_server.stop();
+        if (gb28181_server) gb28181_server->stop();
         hub.stop_all();
         io.stop();
     });

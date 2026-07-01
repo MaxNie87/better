@@ -367,6 +367,87 @@ core/thread_pool.cpp.s:
 	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/core/thread_pool.cpp.s
 .PHONY : core/thread_pool.cpp.s
 
+gb28181/gb28181_server.o: gb28181/gb28181_server.cpp.o
+
+.PHONY : gb28181/gb28181_server.o
+
+# target to build an object file
+gb28181/gb28181_server.cpp.o:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.o
+.PHONY : gb28181/gb28181_server.cpp.o
+
+gb28181/gb28181_server.i: gb28181/gb28181_server.cpp.i
+
+.PHONY : gb28181/gb28181_server.i
+
+# target to preprocess a source file
+gb28181/gb28181_server.cpp.i:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.i
+.PHONY : gb28181/gb28181_server.cpp.i
+
+gb28181/gb28181_server.s: gb28181/gb28181_server.cpp.s
+
+.PHONY : gb28181/gb28181_server.s
+
+# target to generate assembly for a file
+gb28181/gb28181_server.cpp.s:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.s
+.PHONY : gb28181/gb28181_server.cpp.s
+
+gb28181/ps_demuxer.o: gb28181/ps_demuxer.cpp.o
+
+.PHONY : gb28181/ps_demuxer.o
+
+# target to build an object file
+gb28181/ps_demuxer.cpp.o:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.o
+.PHONY : gb28181/ps_demuxer.cpp.o
+
+gb28181/ps_demuxer.i: gb28181/ps_demuxer.cpp.i
+
+.PHONY : gb28181/ps_demuxer.i
+
+# target to preprocess a source file
+gb28181/ps_demuxer.cpp.i:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.i
+.PHONY : gb28181/ps_demuxer.cpp.i
+
+gb28181/ps_demuxer.s: gb28181/ps_demuxer.cpp.s
+
+.PHONY : gb28181/ps_demuxer.s
+
+# target to generate assembly for a file
+gb28181/ps_demuxer.cpp.s:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.s
+.PHONY : gb28181/ps_demuxer.cpp.s
+
+gb28181/sip_message.o: gb28181/sip_message.cpp.o
+
+.PHONY : gb28181/sip_message.o
+
+# target to build an object file
+gb28181/sip_message.cpp.o:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.o
+.PHONY : gb28181/sip_message.cpp.o
+
+gb28181/sip_message.i: gb28181/sip_message.cpp.i
+
+.PHONY : gb28181/sip_message.i
+
+# target to preprocess a source file
+gb28181/sip_message.cpp.i:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.i
+.PHONY : gb28181/sip_message.cpp.i
+
+gb28181/sip_message.s: gb28181/sip_message.cpp.s
+
+.PHONY : gb28181/sip_message.s
+
+# target to generate assembly for a file
+gb28181/sip_message.cpp.s:
+	cd /code3/better/no1/CamStreamKit/build && $(MAKE) -f src/CMakeFiles/camstreamkit_lib.dir/build.make src/CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.s
+.PHONY : gb28181/sip_message.cpp.s
+
 http/api_server.o: http/api_server.cpp.o
 
 .PHONY : http/api_server.o
@@ -807,6 +888,15 @@ help:
 	@echo "... core/thread_pool.o"
 	@echo "... core/thread_pool.i"
 	@echo "... core/thread_pool.s"
+	@echo "... gb28181/gb28181_server.o"
+	@echo "... gb28181/gb28181_server.i"
+	@echo "... gb28181/gb28181_server.s"
+	@echo "... gb28181/ps_demuxer.o"
+	@echo "... gb28181/ps_demuxer.i"
+	@echo "... gb28181/ps_demuxer.s"
+	@echo "... gb28181/sip_message.o"
+	@echo "... gb28181/sip_message.i"
+	@echo "... gb28181/sip_message.s"
 	@echo "... http/api_server.o"
 	@echo "... http/api_server.i"
 	@echo "... http/api_server.s"

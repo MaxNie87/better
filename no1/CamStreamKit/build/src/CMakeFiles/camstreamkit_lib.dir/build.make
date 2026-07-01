@@ -343,6 +343,45 @@ src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.s"
 	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/no1/CamStreamKit/src/webrtc/whep_server.cpp -o CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.s
 
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.o: src/CMakeFiles/camstreamkit_lib.dir/flags.make
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.o: ../src/gb28181/sip_message.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.o"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.o -c /code3/better/no1/CamStreamKit/src/gb28181/sip_message.cpp
+
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.i"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/no1/CamStreamKit/src/gb28181/sip_message.cpp > CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.i
+
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.s"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/no1/CamStreamKit/src/gb28181/sip_message.cpp -o CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.s
+
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.o: src/CMakeFiles/camstreamkit_lib.dir/flags.make
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.o: ../src/gb28181/ps_demuxer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.o"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.o -c /code3/better/no1/CamStreamKit/src/gb28181/ps_demuxer.cpp
+
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.i"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/no1/CamStreamKit/src/gb28181/ps_demuxer.cpp > CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.i
+
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.s"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/no1/CamStreamKit/src/gb28181/ps_demuxer.cpp -o CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.s
+
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.o: src/CMakeFiles/camstreamkit_lib.dir/flags.make
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.o: ../src/gb28181/gb28181_server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.o"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.o -c /code3/better/no1/CamStreamKit/src/gb28181/gb28181_server.cpp
+
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.i"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /code3/better/no1/CamStreamKit/src/gb28181/gb28181_server.cpp > CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.i
+
+src/CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.s"
+	cd /code3/better/no1/CamStreamKit/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /code3/better/no1/CamStreamKit/src/gb28181/gb28181_server.cpp -o CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.s
+
 # Object files for target camstreamkit_lib
 camstreamkit_lib_OBJECTS = \
 "CMakeFiles/camstreamkit_lib.dir/core/buffer.cpp.o" \
@@ -366,7 +405,10 @@ camstreamkit_lib_OBJECTS = \
 "CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_session.cpp.o" \
 "CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o" \
 "CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o" \
-"CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o"
+"CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o" \
+"CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.o" \
+"CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.o" \
+"CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.o"
 
 # External object files for target camstreamkit_lib
 camstreamkit_lib_EXTERNAL_OBJECTS =
@@ -393,9 +435,12 @@ src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/webrtc/srtp_sessi
 src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/webrtc/stun.cpp.o
 src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/webrtc/webrtc_session.cpp.o
 src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/webrtc/whep_server.cpp.o
+src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.o
+src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.o
+src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.o
 src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/build.make
 src/libcamstreamkit_lib.a: src/CMakeFiles/camstreamkit_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library libcamstreamkit_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/code3/better/no1/CamStreamKit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX static library libcamstreamkit_lib.a"
 	cd /code3/better/no1/CamStreamKit/build/src && $(CMAKE_COMMAND) -P CMakeFiles/camstreamkit_lib.dir/cmake_clean_target.cmake
 	cd /code3/better/no1/CamStreamKit/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/camstreamkit_lib.dir/link.txt --verbose=$(VERBOSE)
 

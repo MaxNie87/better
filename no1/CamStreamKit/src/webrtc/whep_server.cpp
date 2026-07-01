@@ -93,12 +93,20 @@ WhepAnswer WhepServer::handle_offer(const std::string &stream_id, const std::str
         return {};
     }
 
+    CSK_LOG_I("WHEP offer SDP (first 200 chars): {}", offer_sdp.substr(0, 200));
+
+    std::string h264_fmtp;
+    int h264_pt = find_h264_pt(offer_sdp, h264_fmtp);
+    CSK_LOG_I("WHEP: H264 PT={}, fmtp={}", h264_pt, h264_fmtp);
+    if (h264_pt < 0) h264_pt = 96;  // fallback
+
     WebRtcSessionConfig config;
     config.stream_id = stream_id;
     config.local_ufrag = generate_id().substr(0, 8);
     config.local_pwd = generate_id() + generate_id();
     config.remote_ufrag = parse_remote_ufrag(offer_sdp);
     config.remote_pwd = parse_remote_pwd(offer_sdp);
+    config.payload_type = static_cast<uint8_t>(h264_pt);
 
     std::random_device rd;
     config.ssrc = rd();
@@ -106,8 +114,8 @@ WhepAnswer WhepServer::handle_offer(const std::string &stream_id, const std::str
     auto session = std::make_shared<WebRtcSession>(io_, config);
     session->set_udp_sender([this](const uint8_t *data, size_t len,
                                    const asio::ip::udp::endpoint &ep) {
-        socket_.async_send_to(asio::buffer(data, len), ep,
-                              [](asio::error_code, size_t) {});
+        asio::error_code ec;
+        socket_.send_to(asio::buffer(data, len), ep, 0, ec);
     });
 
     std::string resource_id = generate_id();
@@ -123,7 +131,8 @@ WhepAnswer WhepServer::handle_offer(const std::string &stream_id, const std::str
     source->add_subscriber(sink_ptr);
     session->start(asio::ip::udp::endpoint());
 
-    std::string answer = build_answer_sdp(config, udp_port_);
+    std::string host_ip = detect_local_ip();
+    std::string answer = build_answer_sdp(config, udp_port_, host_ip, h264_pt, h264_fmtp);
 
     WhepAnswer result;
     result.sdp = answer;
@@ -160,20 +169,26 @@ std::string WhepServer::generate_id() {
     return id;
 }
 
-std::string WhepServer::build_answer_sdp(const WebRtcSessionConfig &config, uint16_t port) {
+std::string WhepServer::build_answer_sdp(const WebRtcSessionConfig &config, uint16_t port,
+                                          const std::string &host_ip, int h264_pt,
+                                          const std::string &h264_fmtp) {
     auto &dtls_ctx = DtlsContext::instance();
     std::ostringstream ss;
 
+    std::string fmtp = h264_fmtp.empty()
+                           ? "packetization-mode=1;level-asymmetry-allowed=1;profile-level-id=42e01f"
+                           : h264_fmtp;
+
     ss << "v=0\r\n"
-       << "o=- 0 0 IN IP4 0.0.0.0\r\n"
+       << "o=- 1 1 IN IP4 " << host_ip << "\r\n"
        << "s=-\r\n"
        << "t=0 0\r\n"
        << "a=group:BUNDLE 0\r\n"
        << "a=ice-lite\r\n"
-       << "m=video " << port << " UDP/TLS/RTP/SAVPF 96\r\n"
-       << "c=IN IP4 0.0.0.0\r\n"
-       << "a=rtpmap:96 H264/90000\r\n"
-       << "a=fmtp:96 packetization-mode=1\r\n"
+       << "m=video " << port << " UDP/TLS/RTP/SAVPF " << h264_pt << "\r\n"
+       << "c=IN IP4 " << host_ip << "\r\n"
+       << "a=rtpmap:" << h264_pt << " H264/90000\r\n"
+       << "a=fmtp:" << h264_pt << " " << fmtp << "\r\n"
        << "a=sendonly\r\n"
        << "a=mid:0\r\n"
        << "a=ice-ufrag:" << config.local_ufrag << "\r\n"
@@ -181,9 +196,68 @@ std::string WhepServer::build_answer_sdp(const WebRtcSessionConfig &config, uint
        << "a=fingerprint:sha-256 " << dtls_ctx.fingerprint() << "\r\n"
        << "a=setup:passive\r\n"
        << "a=rtcp-mux\r\n"
+       << "a=candidate:1 1 UDP 2130706431 " << host_ip << " " << port
+       << " typ host\r\n"
+       << "a=end-of-candidates\r\n"
        << "a=ssrc:" << config.ssrc << " cname:camstreamkit\r\n";
 
     return ss.str();
+}
+
+int WhepServer::find_h264_pt(const std::string &sdp, std::string &fmtp_out) {
+    // Find "a=rtpmap:<PT> H264/90000" in offer SDP
+    std::string marker = " H264/90000";
+    size_t pos = 0;
+    int best_pt = -1;
+
+    while ((pos = sdp.find("a=rtpmap:", pos)) != std::string::npos) {
+        pos += 9;  // skip "a=rtpmap:"
+        auto space = sdp.find(' ', pos);
+        if (space == std::string::npos) break;
+        std::string pt_str = sdp.substr(pos, space - pos);
+        auto line_end = sdp.find("\r\n", space);
+        if (line_end == std::string::npos) line_end = sdp.find("\n", space);
+        std::string codec_part = sdp.substr(space, line_end - space);
+
+        if (codec_part.find("H264/90000") != std::string::npos) {
+            int pt = std::stoi(pt_str);
+            // Find matching fmtp line for this PT
+            std::string fmtp_prefix = "a=fmtp:" + pt_str + " ";
+            auto fmtp_pos = sdp.find(fmtp_prefix);
+            if (fmtp_pos != std::string::npos) {
+                fmtp_pos += fmtp_prefix.size();
+                auto fmtp_end = sdp.find("\r\n", fmtp_pos);
+                if (fmtp_end == std::string::npos) fmtp_end = sdp.find("\n", fmtp_pos);
+                std::string fmtp = sdp.substr(fmtp_pos, fmtp_end - fmtp_pos);
+                // Prefer profile 42e01f (Constrained Baseline) for compatibility
+                if (fmtp.find("42e01f") != std::string::npos ||
+                    fmtp.find("42001f") != std::string::npos) {
+                    fmtp_out = fmtp;
+                    return pt;
+                }
+                if (best_pt < 0) {
+                    best_pt = pt;
+                    fmtp_out = fmtp;
+                }
+            } else {
+                if (best_pt < 0) best_pt = pt;
+            }
+        }
+        pos = space;
+    }
+    return best_pt;
+}
+
+std::string WhepServer::detect_local_ip() {
+    try {
+        asio::ip::udp::socket tmp(io_, asio::ip::udp::v4());
+        tmp.connect(asio::ip::udp::endpoint(asio::ip::make_address("8.8.8.8"), 80));
+        std::string ip = tmp.local_endpoint().address().to_string();
+        tmp.close();
+        return ip;
+    } catch (...) {
+        return "127.0.0.1";
+    }
 }
 
 std::string WhepServer::parse_remote_ufrag(const std::string &sdp) {

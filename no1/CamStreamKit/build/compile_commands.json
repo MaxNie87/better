@@ -685,6 +685,21 @@
   "file": "/code3/better/no1/CamStreamKit/src/webrtc/whep_server.cpp"
 },
 {
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/gb28181/sip_message.cpp.o -c /code3/better/no1/CamStreamKit/src/gb28181/sip_message.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/gb28181/sip_message.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/gb28181/ps_demuxer.cpp.o -c /code3/better/no1/CamStreamKit/src/gb28181/ps_demuxer.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/gb28181/ps_demuxer.cpp"
+},
+{
+  "directory": "/code3/better/no1/CamStreamKit/build/src",
+  "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/camstreamkit_lib.dir/gb28181/gb28181_server.cpp.o -c /code3/better/no1/CamStreamKit/src/gb28181/gb28181_server.cpp",
+  "file": "/code3/better/no1/CamStreamKit/src/gb28181/gb28181_server.cpp"
+},
+{
   "directory": "/code3/better/no1/CamStreamKit/build/tests",
   "command": "/usr/bin/c++  -DASIO_NO_DEPRECATED -DASIO_STANDALONE -DSPDLOG_COMPILED_LIB -I/code3/better/no1/CamStreamKit/include -I/code3/better/no1/CamStreamKit/src -I/code3/better/no1/CamStreamKit/third_party/asio/asio/include -I/code3/better/no1/CamStreamKit/third_party/spdlog/include -I/code3/better/no1/CamStreamKit/third_party/json/include -I/code3/better/no1/CamStreamKit/third_party/Catch2/src/catch2/.. -I/code3/better/no1/CamStreamKit/build/Catch2/generated-includes  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/test_rtsp_parser.dir/unit/test_rtsp_parser.cpp.o -c /code3/better/no1/CamStreamKit/tests/unit/test_rtsp_parser.cpp",
   "file": "/code3/better/no1/CamStreamKit/tests/unit/test_rtsp_parser.cpp"

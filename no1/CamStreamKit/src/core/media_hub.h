@@ -20,6 +20,7 @@ struct StreamInfo {
     std::string status;
     uint32_t bitrate_kbps = 0;
     uint32_t fps = 0;
+    std::string gb28181_device_id;
 };
 
 class MediaHub {

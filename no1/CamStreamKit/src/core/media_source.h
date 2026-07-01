@@ -26,6 +26,7 @@ public:
     virtual CodecType video_codec() const = 0;
     virtual std::string generate_sdp(const std::string &url) = 0;
     virtual std::string status() const { return status_; }
+    virtual std::string gb28181_device_id() const { return ""; }
 
     void add_subscriber(std::weak_ptr<IMediaSink> sink);
     void remove_subscriber(IMediaSink *sink);

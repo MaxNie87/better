@@ -6,8 +6,8 @@
 
 - **RTSP 代理**: 按需拉流、断线重连、GOP 缓存秒开、1:N 多路分发
 - **H.264/H.265 解析**: Annex-B 解析、RTP 打包/解包、FU-A 分片重组
-- **GB28181 国标**: SIP 信令、PS 流解封装（规划中）
-- **WebRTC 浏览器播放**: WHEP 协议、无插件播放（规划中）
+- **GB28181 国标**: SIP 注册、Keepalive、INVITE 点播、RTP/PS 解封装
+- **WebRTC 浏览器播放**: WHEP 协议、ICE-lite、DTLS/SRTP、无插件播放
 - **RESTful API**: 流管理、统计信息、Prometheus 指标
 
 ## 快速开始
@@ -122,6 +122,16 @@ CamStreamKit/
 │   │   ├── rtsp_parser.h/cpp   # RTSP 协议解析
 │   │   ├── rtsp_client.h/cpp   # RTSP 拉流客户端
 │   │   └── rtsp_server.h/cpp   # RTSP 服务端
+│   ├── gb28181/
+│   │   ├── sip_message.h/cpp  # SIP 协议解析/生成
+│   │   ├── ps_demuxer.h/cpp   # PS 流解封装
+│   │   └── gb28181_server.h/cpp # GB28181 SIP 服务 + 媒体源
+│   ├── webrtc/
+│   │   ├── dtls_context.h/cpp # DTLS 上下文管理
+│   │   ├── srtp_session.h/cpp # SRTP 加密
+│   │   ├── stun.h/cpp         # STUN 消息处理
+│   │   ├── webrtc_session.h/cpp # WebRTC 会话
+│   │   └── whep_server.h/cpp  # WHEP 协议服务
 │   └── http/
 │       └── api_server.h/cpp    # REST API + Prometheus 指标
 ├── tests/                      # Catch2 单元测试
@@ -156,9 +166,13 @@ CamStreamKit/
 | 方法 | 路径 | 说明 |
 |------|------|------|
 | GET | /api/v1/streams | 列出所有流 |
-| POST | /api/v1/streams | 添加摄像头 |
+| POST | /api/v1/streams | 添加 RTSP 摄像头 |
 | GET | /api/v1/streams/{id} | 获取流详情 |
 | DELETE | /api/v1/streams/{id} | 删除流 |
+| POST | /whep/{stream_id} | WebRTC WHEP 播放 |
+| GET | /api/v1/gb28181/devices | 列出已注册 GB28181 设备 |
+| POST | /api/v1/gb28181/invite | 邀请设备推流 (body: `{"device_id":"...", "stream_id":"..."}`) |
+| POST | /api/v1/gb28181/bye/{stream_id} | 停止 GB28181 推流 |
 | GET | /api/v1/version | 版本信息 |
 | GET | /metrics | Prometheus 指标 |
 
@@ -166,10 +180,17 @@ CamStreamKit/
 
 ```json
 {
-    "server": { "http_port": 8080, "rtsp_port": 554, "threads": 4 },
+    "server": { "http_port": 8080, "rtsp_port": 554 },
     "camera": { "reconnect_base_ms": 1000, "reconnect_max_ms": 30000, "timeout_ms": 10000 },
-    "gb28181": { "enabled": false, "sip_port": 5060, "server_id": "34020000002000000001" },
-    "webrtc": { "enabled": false, "stun_server": "stun:stun.l.google.com:19302" },
+    "gb28181": {
+        "enabled": true,
+        "sip_port": 5060,
+        "server_id": "34020000002000000001",
+        "domain": "3402000000",
+        "password": "12345678",
+        "heartbeat_timeout_s": 180
+    },
+    "webrtc": { "enabled": true, "udp_port": 8555, "stun_server": "stun:stun.l.google.com:19302" },
     "log": { "level": "info", "file": "" }
 }
 ```

@@ -12,7 +12,7 @@
 namespace csk {
 
 WebRtcSession::WebRtcSession(asio::io_context &io, const WebRtcSessionConfig &config)
-    : config_(config), io_(io), packetizer_(96, config.ssrc) {
+    : config_(config), io_(io), packetizer_(config.payload_type, config.ssrc) {
     timestamp_ = 0;
 }
 
@@ -141,16 +141,115 @@ void WebRtcSession::on_dtls_connected() {
 
 void WebRtcSession::on_media_frame(const MediaFrame &frame) {
     if (state_ != WebRtcState::READY) return;
+    if (!frame.data || frame.data->empty()) return;
 
-    timestamp_ += 3000;  // 90kHz clock, ~33ms per frame at 30fps
-
-    if (!frame.data) return;
-
-    // Parse NAL units from frame data
     auto nals = h264_parser_.parse(SpanU8(frame.data->data(), frame.data->size()));
+    if (nals.empty()) return;
 
+    // Always cache SPS/PPS regardless of keyframe state
     for (auto &nal : nals) {
-        auto packets = packetizer_.packetize(nal, timestamp_);
+        if (nal.is_sps()) cached_sps_ = nal.data;
+        else if (nal.is_pps()) cached_pps_ = nal.data;
+    }
+
+    // Skip parameter-set-only frames (SPS/PPS) - don't send them standalone.
+    // They'll be sent together with their IDR.
+    bool has_slice = false;
+    for (auto &nal : nals) {
+        if (nal.is_idr() || nal.is_slice()) { has_slice = true; break; }
+    }
+    if (!has_slice) return;
+
+    // Wait for IDR before sending anything
+    if (!got_keyframe_) {
+        bool has_idr = false;
+        for (auto &nal : nals) {
+            if (nal.is_idr()) { has_idr = true; break; }
+        }
+        if (!has_idr) return;
+        got_keyframe_ = true;
+        CSK_LOG_I("WebRTC[{}]: Got first keyframe, SPS={}B PPS={}B, sending IDR",
+                  config_.stream_id, cached_sps_.size(), cached_pps_.size());
+
+        // Prepend cached SPS/PPS before the IDR
+        std::vector<NalUnit> send_nals;
+        if (!cached_sps_.empty()) {
+            NalUnit sps;
+            sps.data = cached_sps_;
+            sps.type = 7;
+            send_nals.push_back(std::move(sps));
+        }
+        if (!cached_pps_.empty()) {
+            NalUnit pps;
+            pps.data = cached_pps_;
+            pps.type = 8;
+            send_nals.push_back(std::move(pps));
+        }
+        for (auto &nal : nals) {
+            send_nals.push_back(std::move(nal));
+        }
+
+        // Use source timestamp directly (already 90kHz from RTSP)
+        timestamp_ = frame.timestamp;
+        send_nals_as_rtp(send_nals);
+        return;
+    }
+
+    // For subsequent IDR frames, also prepend SPS/PPS
+    bool has_idr = false;
+    for (auto &nal : nals) {
+        if (nal.is_idr()) { has_idr = true; break; }
+    }
+
+    // Use source timestamp (90kHz). If source ts is 0 or non-monotonic, generate our own.
+    if (frame.timestamp > 0) {
+        timestamp_ = frame.timestamp;
+    } else {
+        timestamp_ += 3000;
+    }
+
+    if (has_idr) {
+        std::vector<NalUnit> send_nals;
+        if (!cached_sps_.empty()) {
+            NalUnit sps;
+            sps.data = cached_sps_;
+            sps.type = 7;
+            send_nals.push_back(std::move(sps));
+        }
+        if (!cached_pps_.empty()) {
+            NalUnit pps;
+            pps.data = cached_pps_;
+            pps.type = 8;
+            send_nals.push_back(std::move(pps));
+        }
+        for (auto &nal : nals) {
+            send_nals.push_back(std::move(nal));
+        }
+        send_nals_as_rtp(send_nals);
+    } else {
+        send_nals_as_rtp(nals);
+    }
+}
+
+void WebRtcSession::send_nals_as_rtp(const std::vector<NalUnit> &nals) {
+    static uint64_t frame_count = 0;
+    if (++frame_count <= 5 || frame_count % 100 == 0) {
+        std::string nal_info;
+        for (auto &n : nals) {
+            nal_info += " type=" + std::to_string(n.type) + "(" + std::to_string(n.data.size()) + "B)";
+        }
+        CSK_LOG_I("WebRTC[{}]: send frame#{} ts={} nals:[{}]",
+                  config_.stream_id, frame_count, timestamp_, nal_info);
+    }
+    for (size_t i = 0; i < nals.size(); ++i) {
+        bool is_last_nal = (i == nals.size() - 1);
+        auto packets = packetizer_.packetize(nals[i], timestamp_);
+
+        // Only set marker on the very last packet of the last NAL in this access unit
+        if (!packets.empty() && !is_last_nal) {
+            packets.back().header().marker = false;
+        }
+
         for (auto &pkt : packets) {
             auto serialized = pkt.serialize();
             send_srtp_packet(serialized);

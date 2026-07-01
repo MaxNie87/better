@@ -11,8 +11,12 @@ examples/CMakeFiles/simple_proxy.dir/simple_proxy.cpp.o
  ../src/core/media_hub.h
  ../src/core/media_source.h
  ../src/core/timer.h
+ ../src/gb28181/gb28181_server.h
+ ../src/gb28181/ps_demuxer.h
+ ../src/gb28181/sip_message.h
  ../src/http/api_server.h
  ../src/net/tcp_server.h
+ ../src/net/udp_socket.h
  ../src/rtp/rtp_packet.h
  ../src/rtp/rtp_packetizer.h
  ../src/rtsp/rtsp_client.h

@@ -88,18 +88,18 @@ bool SrtpSession::protect_rtp(std::vector<uint8_t> &packet) {
                                (packet[10] << 8) | packet[11]);
 
     // Compute IV for AES-CM (RFC 3711 Section 4.1.1)
+    // IV layout: [0:3]=0 | [4:7]=SSRC | [8:11]=ROC | [12:13]=SEQ | [14:15]=0
     uint8_t iv[16] = {};
-    uint32_t ssrc_be = ssrc;
-    std::memcpy(iv + 4, &ssrc_be, 4);
-    // Reconstruct big-endian SSRC
     iv[4] = (ssrc >> 24) & 0xFF;
     iv[5] = (ssrc >> 16) & 0xFF;
     iv[6] = (ssrc >> 8) & 0xFF;
     iv[7] = ssrc & 0xFF;
-    iv[8] = (roc_ >> 8) & 0xFF;
-    iv[9] = roc_ & 0xFF;
-    iv[10] = (seq >> 8) & 0xFF;
-    iv[11] = seq & 0xFF;
+    iv[8] = (roc_ >> 24) & 0xFF;
+    iv[9] = (roc_ >> 16) & 0xFF;
+    iv[10] = (roc_ >> 8) & 0xFF;
+    iv[11] = roc_ & 0xFF;
+    iv[12] = (seq >> 8) & 0xFF;
+    iv[13] = seq & 0xFF;
 
     for (int i = 0; i < 14; i++) iv[i] ^= session_salt_[i];
 

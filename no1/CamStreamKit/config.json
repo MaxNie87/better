@@ -10,7 +10,7 @@
         "idle_timeout_s": 10
     },
     "gb28181": {
-        "enabled": false,
+        "enabled": true,
         "sip_port": 5060,
         "server_id": "34020000002000000001",
         "domain": "3402000000",

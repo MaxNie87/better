@@ -41,9 +41,13 @@ public:
 private:
     void do_receive();
     std::string generate_id();
-    std::string build_answer_sdp(const WebRtcSessionConfig &config, uint16_t port);
+    std::string build_answer_sdp(const WebRtcSessionConfig &config, uint16_t port,
+                                 const std::string &host_ip, int h264_pt,
+                                 const std::string &h264_fmtp);
     std::string parse_remote_ufrag(const std::string &sdp);
     std::string parse_remote_pwd(const std::string &sdp);
+    std::string detect_local_ip();
+    static int find_h264_pt(const std::string &offer_sdp, std::string &fmtp_out);
 
     asio::io_context &io_;
     MediaHub &hub_;

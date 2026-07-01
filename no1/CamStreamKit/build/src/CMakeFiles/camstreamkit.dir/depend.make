@@ -7,7 +7,11 @@ src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/core/buffer.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/core/gop_cache.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/core/media_frame.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/core/media_source.h
+src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/core/timer.h
+src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/gb28181/ps_demuxer.h
+src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/gb28181/sip_message.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/net/tcp_server.h
+src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/net/udp_socket.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/rtp/rtp_packet.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/rtp/rtp_packetizer.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/rtsp/rtsp_parser.h
@@ -640,6 +644,7 @@ src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../third_party/spdlog/include/spdlog
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/core/config.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/core/logger.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/core/media_hub.h
+src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/gb28181/gb28181_server.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/http/api_server.h
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/main.cpp
 src/CMakeFiles/camstreamkit.dir/main.cpp.o: ../src/rtsp/rtsp_server.h

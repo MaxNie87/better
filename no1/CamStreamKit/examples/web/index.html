@@ -265,6 +265,7 @@
             const sc = s.status === 'online' ? 'status-online' : s.status === 'connecting' ? 'status-connecting' : 'status-offline';
             const st = s.status === 'online' ? '在线' : s.status === 'connecting' ? '连接中' : '离线';
             const rtsp = 'rtsp://' + location.hostname + ':554/stream/' + s.id;
+            const whep = location.protocol + '//' + location.host + '/whep/' + s.id;
             return `
             <div class="stream-card">
                 <div class="stream-card-header">
@@ -273,14 +274,15 @@
                 </div>
                 <div class="stream-info">
                     <div class="info-row"><span class="label">RTSP</span><span class="value">${rtsp}</span></div>
-                    <div class="info-row"><span class="label">WebRTC</span><span class="value">POST /whep/${s.id}</span></div>
+                    <div class="info-row"><span class="label">WebRTC</span><span class="value">${whep}</span></div>
+                    <div class="info-row"><span class="label">GB28181</span><span class="value">${s.gb28181_id || '未注册'}</span></div>
                     <div class="info-row"><span class="label">编码</span><span class="value">${s.codec || 'H264'} | ${s.bitrate_kbps || 0} kbps</span></div>
                 </div>
                 <div class="stream-footer">
                     <div class="viewer-count">${s.subscribers || 0} 观看</div>
                     <div style="display:flex;gap:8px">
                         <button class="btn btn-success btn-sm" onclick="playStream('${s.id}')">播放</button>
-                        <button class="btn btn-ghost btn-sm" onclick="copyUrl('${rtsp}')">复制</button>
+                        <button class="btn btn-ghost btn-sm" onclick="copyUrl('${whep}')">复制</button>
                         <button class="btn btn-danger btn-sm" onclick="deleteStream('${s.id}')">删除</button>
                     </div>
                 </div>
@@ -368,18 +370,21 @@
 
             const resp = await fetch(API_BASE + '/whep/' + streamId, {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/sdp' },
-                body: pc.localDescription.sdp
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ sdp: pc.localDescription.sdp })
             });
 
+            const data = await resp.json();
             if (!resp.ok) {
-                const err = await resp.text();
-                document.getElementById('player-status').textContent = '连接失败: ' + err;
+                document.getElementById('player-status').textContent = '连接失败: ' + (data.error || resp.status);
                 return;
             }
 
-            const answerSdp = await resp.text();
-            await pc.setRemoteDescription({ type: 'answer', sdp: answerSdp });
+            if (!data.sdp) {
+                document.getElementById('player-status').textContent = '服务器未返回 SDP';
+                return;
+            }
+            await pc.setRemoteDescription({ type: 'answer', sdp: data.sdp });
             document.getElementById('player-status').textContent = '等待视频流...';
 
         } catch (e) {
